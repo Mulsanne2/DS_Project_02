@@ -23,7 +23,7 @@ public:
 		this->fout = fout;
 	}
 	// ~FPGrowth();
-	// void createTable(char* item, int frequency) { table->insertTable(item, frequency); }
+	void createTable(char* item, int frequency) { table->insertTable(item, frequency); }
 
 
 	// void createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency);

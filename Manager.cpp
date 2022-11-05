@@ -72,7 +72,8 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 			if(temp==NULL)
 				break;
 			if(!fpgrowth->getHeaderTable()->Find_Item(temp)){ //if there is no item on the index table
-				fpgrowth->getHeaderTable()->insertTable(temp, 1); //insert table
+				// fpgrowth->getHeaderTable()->insertTable(temp, 1); //insert table
+				fpgrowth->createTable(temp, 1); //insert table
 			}
 			else{
 				fpgrowth->getHeaderTable()->Increase_Frequency(temp); //increase Frequency of temp
