@@ -90,6 +90,7 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 	}
 	fpgrowth->getHeaderTable()->descendingIndexTable(); //sort Index Table
 	fpgrowth->getHeaderTable()->makeDataTable(); //make data table refer to sorted index table
+	readItem.close();
 
 	//read market.txt again by frequency and threshold
 	ifstream rereadItem;
@@ -108,15 +109,14 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 		if(SortedItem.empty()) //when there is no item satisfy threshold
 			continue;
 
-		
+		// for (string i : SortedItem){
+		// 	cout << i << " ";
+		// }
+		// cout << endl;
 
-		for (string i : SortedItem){
-			cout << i << " ";
-		}
-		cout << endl;
-
-		// cout << ItemLine << endl;
+		fpgrowth->createFPtree(fpgrowth->getTree(), fpgrowth->getHeaderTable(), SortedItem, 1);
 	}
+	rereadItem.close();
 
 	return true;
 }

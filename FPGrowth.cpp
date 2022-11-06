@@ -5,14 +5,44 @@
 
 // }
 
-// void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency) {
+void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency) {
+    FPNode *CurrentNode = root;
+    list<string>::iterator iter;
 
+    for (iter = item_array.begin(); iter != item_array.end(); iter++)
+    {
+        // cout << *iter << endl;
+        if (CurrentNode->getChildrenNode(*iter))
+        {                                                      // check if there is item node alreay exists
+            CurrentNode = CurrentNode->getChildrenNode(*iter); // move to children node
+            CurrentNode->updateFrequency(1);                   // increase frequency
+        }
+        else
+        { // if there child node don't exist
+            FPNode *newChild = new FPNode; //make new node
+            newChild->setParent(CurrentNode); // set parent node as current
+            connectNode(table, *iter, newChild);
 
-// }
+            CurrentNode->pushchildren(*iter, newChild); // connecte the new Child into children map
 
-// void FPGrowth::connectNode(HeaderTable* table, string item, FPNode* node) {
+            CurrentNode = CurrentNode->getChildrenNode(*iter); // move to children node
+            CurrentNode->updateFrequency(1);                   // increase frequency
+        }
+    }
+    }
 
-// }
+void FPGrowth::connectNode(HeaderTable* table, string item, FPNode* node) {
+    if(!table->getNode(item)){
+        table->insertNode(item, node);
+    }
+    else{
+        FPNode *LastNode = table->getNode(item);
+        while(LastNode->getNext()){
+            LastNode = LastNode->getNext();
+        }
+        LastNode->setNext(node);
+    }
+}
 
 // bool FPGrowth::contains_single_path(FPNode* pNode) {
 // 	if (pNode->getChildren().size() == 0) return true;

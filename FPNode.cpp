@@ -13,11 +13,11 @@ FPNode::FPNode()	//constructor
 
 // }
 
-// FPNode* FPNode::getChildrenNode(string item) {
-// 	map<string, FPNode*>::iterator it = children.find(item);
-// 	if (it == children.end()) return NULL;
-// 	FPNode* findNode = it->second;
-// 	return findNode;
-// }
+FPNode* FPNode::getChildrenNode(string item) {
+	map<string, FPNode*>::iterator it = children.find(item);
+	if (it == children.end()) return NULL;
+	FPNode* findNode = it->second;
+	return findNode;
+}
 
 

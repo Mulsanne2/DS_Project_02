@@ -20,4 +20,5 @@ public:
 	int find_frequency(string item);
 	bool Find_Item(string item);
 	void Increase_Frequency(string item);
+	void insertNode(string item, FPNode *newNode); //connect data table map with FPNode
 };

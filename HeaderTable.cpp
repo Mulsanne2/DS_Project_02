@@ -1,7 +1,8 @@
 #include "HeaderTable.h"
 
 // HeaderTable::~HeaderTable() {
-
+	//1) delete insert Table
+	//2) delete data Table
 // }
 
 void HeaderTable::insertTable(char* item, int frequency) {
@@ -57,4 +58,6 @@ void HeaderTable::Increase_Frequency(string item){
 	}
 }
 
-
+void HeaderTable::insertNode(string item, FPNode *newNode){
+	dataTable.find(item)->second = newNode;
+}

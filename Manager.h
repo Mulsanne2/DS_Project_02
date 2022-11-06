@@ -16,13 +16,12 @@ private:
 public:
 	// Manager(int threshold, int bpOrder)	//constructor  bpOrder은 bptree를 위한것이니 일단 냅두자.
 	// {
-	// 		FPGrowth(flog, threshold);
 	// 	/* You must fill here */
 	// }
 
 	/*나중에 지우기!!*/
 	Manager(int threshold){
-		fpgrowth = new FPGrowth(&flog, 3);
+		fpgrowth = new FPGrowth(&flog, threshold);
 		this->threshold = threshold;
 	}
 
