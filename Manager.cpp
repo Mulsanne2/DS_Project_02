@@ -23,9 +23,9 @@ void Manager::run(const char* command)
 			continue;
 		char *temp = strtok(cmd, " ");
 
-		if(strcmp(temp,"LOAD")==0)
+		if (strcmp(temp, "LOAD") == 0) // check if instruction is LOAD
 		{
-			if(LOAD()){
+			if(LOAD()){ //execute LOAD instruction
 				printSuccessCode("LOAD");
 			}
 			else{
@@ -48,6 +48,12 @@ void Manager::run(const char* command)
 
 bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTable and DataTable
 {
+	//check if LOAD has already done
+	if (!fpgrowth->getHeaderTable()->getindexTable().empty() || !fpgrowth->getHeaderTable()->getdataTable().empty())
+	{
+		return false; //return false
+	}
+
 	ifstream readItem;
 	readItem.open("market.txt");
 	if (!readItem) //check if market.txt is opened
@@ -67,7 +73,7 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 		if (cmd[0] == 0) // check if there is only NULL on line
 			continue;
 
-		char *temp = strtok(cmd, "\t");
+		char *temp = strtok(cmd, "\t"); //cut the string by TAB
 		while(1){
 			if(temp==NULL)
 				break;
@@ -82,8 +88,35 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 		}
 		delete[] cmd;
 	}
-	fpgrowth->getHeaderTable()->descendingIndexTable();
+	fpgrowth->getHeaderTable()->descendingIndexTable(); //sort Index Table
+	fpgrowth->getHeaderTable()->makeDataTable(); //make data table refer to sorted index table
 
+	//read market.txt again by frequency and threshold
+	ifstream rereadItem;
+	rereadItem.open("market.txt");
+	while(!rereadItem.eof()){
+		getline(rereadItem, ItemLine); //read line again
+		list<string> SortedItem;
+		list<pair<int, string>> INDEXTABLE = fpgrowth->getHeaderTable()->getindexTable();
+		list<pair<int, string>>::iterator iter;
+		for (iter = INDEXTABLE.begin(); iter!=INDEXTABLE.end();iter++){ //visit all index table item by frequency
+			if(ItemLine.find(iter->second)!=string::npos && iter->first>=threshold){ //if item is in the market txt.line
+				SortedItem.push_back(iter->second); //push item in to SortedItem list
+			}
+		}
+
+		if(SortedItem.empty()) //when there is no item satisfy threshold
+			continue;
+
+		
+
+		for (string i : SortedItem){
+			cout << i << " ";
+		}
+		cout << endl;
+
+		// cout << ItemLine << endl;
+	}
 
 	return true;
 }
@@ -98,9 +131,9 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 // }
 
 bool Manager::PRINT_ITEMLIST() {
-	if(fpgrowth->getHeaderTable()->getindexTable().empty()){// || fpgrowth->getHeaderTable()->getdataTable().empty()){ 추후에 뒤 추할 것
-		return false;
-	}
+	if (fpgrowth->getHeaderTable()->getindexTable().empty() || fpgrowth->getHeaderTable()->getdataTable().empty()){ // { 추후에 뒤 추할 것
+			return false;
+		}
 	fpgrowth->printList();
 
 	return true;

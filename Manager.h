@@ -11,6 +11,8 @@ private:
 	char* cmd; //to read each command
 	FPGrowth* fpgrowth;
 	// BpTree* bptree;
+	int threshold;
+
 public:
 	// Manager(int threshold, int bpOrder)	//constructor  bpOrder은 bptree를 위한것이니 일단 냅두자.
 	// {
@@ -19,8 +21,9 @@ public:
 	// }
 
 	/*나중에 지우기!!*/
-	Manager(){
+	Manager(int threshold){
 		fpgrowth = new FPGrowth(&flog, 3);
+		this->threshold = threshold;
 	}
 
 	// ~Manager()//destructor

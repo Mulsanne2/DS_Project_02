@@ -8,6 +8,14 @@ void HeaderTable::insertTable(char* item, int frequency) {
 	indexTable.push_back(make_pair(frequency, item));
 }
 
+void HeaderTable::makeDataTable(){
+	list<pair<int, string>>::iterator iter;
+	for (iter = indexTable.begin(); iter != indexTable.end();iter++){
+		string ITEM = iter->second;
+		dataTable.insert({ITEM, NULL});
+	}
+}
+
 int HeaderTable::find_frequency(string item){
 	int frequency = 0;
 	list<pair<int, string>>::iterator iter = indexTable.begin();
@@ -48,3 +56,5 @@ void HeaderTable::Increase_Frequency(string item){
 		iter++;
 	}
 }
+
+

@@ -25,9 +25,9 @@ public:
 	// ~FPGrowth();
 	void createTable(char* item, int frequency) { table->insertTable(item, frequency); }
 
-
-	// void createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency);
-	// void connectNode(HeaderTable* table, string item, FPNode* node);
+	//!!!!!!밑에꺼 해야한다.
+	void createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency);
+	void connectNode(HeaderTable* table, string item, FPNode* node);
 
 	
 	// void frequenctPatternSetting() {

@@ -12,7 +12,7 @@ private:
 	FPNode* next;
 	map<string, FPNode*> children;
 public:
-	// FPNode();
+	FPNode();
 	// ~FPNode();
 	// void setParent(FPNode* node) { this->parent = node; }
 	// void setNext(FPNode* node) { next = node; }
