@@ -1,9 +1,8 @@
 #include "FPGrowth.h"
 
-
-// FPGrowth::~FPGrowth() {
-
-// }
+FPGrowth::~FPGrowth() {
+    flog.close();
+}
 
 void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency) {
     FPNode *CurrentNode = root;
@@ -11,23 +10,32 @@ void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_
 
     for (iter = item_array.begin(); iter != item_array.end(); iter++)
     {
-        // cout << *iter << endl;
-        if (CurrentNode->getChildrenNode(*iter))
-        {                                                      // check if there is item node alreay exists
+
+        if (CurrentNode == NULL){ //check if Current node is NULL
+            cout << "ERROR1" << endl;
+            continue;
+        }
+       if (CurrentNode->getChildrenNode(*iter))
+        {                                                       // check if there is item node alreay exists
             CurrentNode = CurrentNode->getChildrenNode(*iter); // move to children node
             CurrentNode->updateFrequency(1);                   // increase frequency
         }
         else
         { // if there child node don't exist
-            FPNode *newChild = new FPNode; //make new node
+            FPNode *newChild = new FPNode;    // make new node
+            if(newChild==NULL){
+                cout << "NEW ERROR";
+            }
             newChild->setParent(CurrentNode); // set parent node as current
+        
             connectNode(table, *iter, newChild);
 
             CurrentNode->pushchildren(*iter, newChild); // connecte the new Child into children map
-
             CurrentNode = CurrentNode->getChildrenNode(*iter); // move to children node
             CurrentNode->updateFrequency(1);                   // increase frequency
+
         }
+ 
     }
     }
 
@@ -90,9 +98,47 @@ bool FPGrowth::printList() { //print the index table
          << endl;
     return true;
     }
-// bool FPGrowth::printTree() {
-// 	return true;
-// }
+bool FPGrowth::printTree() {
+    list<pair<int, string>> ascendingTable = table->getindexTable();
+    list<pair<int, string>>::iterator iter;
+
+    cout << "========PRINT_FPTREE========" << endl;
+    *fout << "========PRINT_FPTREE========" << endl;
+    cout << "{StandardItem,Frequency} (Path_Item,Frequency)" << endl;
+    *fout << "{StandardItem,Frequency} (Path_Item,Frequency)" << endl;
+    for (iter = ascendingTable.begin(); iter != ascendingTable.end(); iter++)
+    {
+        if (iter->first < threshold) // do not print data which is lower than threshold
+            continue;
+
+        cout << "{" << iter->second << ", " << iter->first << "}" << endl;
+        *fout << "{" << iter->second << ", " << iter->first << "}" << endl;
+        FPNode *LeafTraveler = table->getNode(iter->second);
+        FPNode *CURRENT, *Parent; //CURRENT is value that currrent Node
+        while (LeafTraveler)
+        {
+            CURRENT = LeafTraveler;
+            map<string, FPNode *> TEMPMAP;
+            map<string, FPNode *>::iterator iter;
+
+            while(CURRENT->getParent()){ //find the name of it's node
+                cout << "(" << CURRENT->FINDNAME(CURRENT->getParent()) << ", " << CURRENT->getFrequency() << ")";
+                //print the it's node name and frequency
+                *fout << "(" << CURRENT->FINDNAME(CURRENT->getParent()) << ", " << CURRENT->getFrequency() << ")";
+
+                CURRENT = CURRENT->getParent(); //move to the root
+            }
+            cout << endl;
+            *fout << endl;
+            //move to next connected node
+            LeafTraveler = LeafTraveler->getNext();
+        }
+    }
+    cout << "=========================" << endl;
+    *fout << "=========================" << endl;
+
+    return true;
+}
 // void FPGrowth::saveFrequentPatterns(){
 
 // }

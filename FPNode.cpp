@@ -20,4 +20,14 @@ FPNode* FPNode::getChildrenNode(string item) {
 	return findNode;
 }
 
-
+string FPNode::FINDNAME(FPNode *Parent){
+	map<string, FPNode *>::iterator iter;
+	for (iter = Parent->children.begin(); iter != Parent->children.end(); iter++)
+	{
+		if (iter->second == this)
+		{
+			return iter->first;
+		}
+	}
+	return " ";
+}

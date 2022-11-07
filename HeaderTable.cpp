@@ -20,7 +20,6 @@ void HeaderTable::makeDataTable(){
 int HeaderTable::find_frequency(string item){
 	int frequency = 0;
 	list<pair<int, string>>::iterator iter = indexTable.begin();
-	// auto iter = indexTable.begin();
 	while (iter != indexTable.end())
 	{
 		if (iter->second == item)

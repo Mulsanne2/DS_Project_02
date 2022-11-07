@@ -39,7 +39,7 @@ public:
 	// bool BTLOAD();
 	
 	bool PRINT_ITEMLIST();
-	// bool PRINT_FPTREE();
+	bool PRINT_FPTREE();
 
 	// bool PRINT_RANGE(char* item, int start, int end);
 	// bool PRINT_CONFIDENCE(char* item, double rate);

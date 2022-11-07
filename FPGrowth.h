@@ -19,11 +19,12 @@ public:
 		this->threshold = threshold;
 		flog.open("result.txt", ios::app);
 		flog.setf(ios::fixed);
-		fpTree = new FPNode;  table = new HeaderTable;
+		fpTree = new FPNode;
+		table = new HeaderTable;
 		this->fout = fout;
 	}
-	// ~FPGrowth();
-	void createTable(char* item, int frequency) { table->insertTable(item, frequency); }
+	~FPGrowth();
+	void createTable(char *item, int frequency) { table->insertTable(item, frequency); }
 
 	//!!!!!!밑에꺼 해야한다.
 	void createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency);
@@ -43,7 +44,7 @@ public:
 	HeaderTable* getHeaderTable() { return table; }
 
 	bool printList();
-	// bool printTree();
+	bool printTree();
 	// void saveFrequentPatterns();
 
 	};

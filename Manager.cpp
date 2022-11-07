@@ -17,7 +17,7 @@ void Manager::run(const char* command)
 	{
 		getline(fin, Instruction);
 
-		cmd = new char[Instruction.length()];
+		cmd = new char[Instruction.length()+1];
 		strcpy(cmd, Instruction.c_str());
 		if (cmd[0] == 0) //check if there is only NULL on line
 			continue;
@@ -40,9 +40,18 @@ void Manager::run(const char* command)
 				printErrorCode("PRINT_ITEMPLIST", 300);
 			}
 		}
+
+		else if (strcmp(temp, "PRINT_FPTREE") == 0) // check if instruction is PRINT_ITEMLIST
+		{
+			if (!PRINT_FPTREE())
+			{
+				printErrorCode("PRINT_FPTREE", 400);
+			}
+		}
 		delete[] cmd;
 	}
 	fin.close();
+	flog.close();
 	return;
 }
 
@@ -68,12 +77,12 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 	{
 		getline(readItem, ItemLine);
 
-		cmd = new char[ItemLine.length()];
-		strcpy(cmd, ItemLine.c_str());
-		if (cmd[0] == 0) // check if there is only NULL on line
+		char * cmdtemp = new char[ItemLine.length()+1];
+		strcpy(cmdtemp, ItemLine.c_str());
+		if (cmdtemp[0] == 0) // check if there is only NULL on line
 			continue;
 
-		char *temp = strtok(cmd, "\t"); //cut the string by TAB
+		char *temp = strtok(cmdtemp, "\t"); //cut the string by TAB
 		while(1){
 			if(temp==NULL)
 				break;
@@ -86,23 +95,35 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 			}
 			temp = strtok(NULL, "\t"); //get next item in the same line
 		}
-		delete[] cmd;
+		delete[] cmdtemp;
 	}
 	fpgrowth->getHeaderTable()->descendingIndexTable(); //sort Index Table
 	fpgrowth->getHeaderTable()->makeDataTable(); //make data table refer to sorted index table
 	readItem.close();
 
+	if(fpgrowth->getHeaderTable()->getindexTable().front().first<threshold){ //if largest item has lower frequency then threshold value
+		return false;
+	}
+
 	//read market.txt again by frequency and threshold
 	ifstream rereadItem;
 	rereadItem.open("market.txt");
+	string ItemLine2;
+	if (!rereadItem) // check if market.txt is opened
+	{
+		return false;
+	}
 	while(!rereadItem.eof()){
-		getline(rereadItem, ItemLine); //read line again
+		getline(rereadItem, ItemLine2); //read line again
 		list<string> SortedItem;
 		list<pair<int, string>> INDEXTABLE = fpgrowth->getHeaderTable()->getindexTable();
 		list<pair<int, string>>::iterator iter;
 		for (iter = INDEXTABLE.begin(); iter!=INDEXTABLE.end();iter++){ //visit all index table item by frequency
-			if(ItemLine.find(iter->second)!=string::npos && iter->first>=threshold){ //if item is in the market txt.line
-				SortedItem.push_back(iter->second); //push item in to SortedItem list
+			if (ItemLine2.find(iter->second) != string::npos && iter->first >= threshold)
+			{										// if item is in the market txt.line
+				int num = ItemLine2.find(iter->second);
+				if (ItemLine2[num - 1] == '\t' || num==0)// to solve when it has same name ex) chocolate and extra dark chocolate
+					SortedItem.push_back(iter->second);	 // push item in to SortedItem list
 			}
 		}
 
@@ -114,7 +135,7 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 		// }
 		// cout << endl;
 
-		fpgrowth->createFPtree(fpgrowth->getTree(), fpgrowth->getHeaderTable(), SortedItem, 1);
+		fpgrowth->createFPtree(fpgrowth->getTree(), fpgrowth->getHeaderTable(), SortedItem, 1); //push on FPTree
 	}
 	rereadItem.close();
 
@@ -131,7 +152,8 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 // }
 
 bool Manager::PRINT_ITEMLIST() {
-	if (fpgrowth->getHeaderTable()->getindexTable().empty() || fpgrowth->getHeaderTable()->getdataTable().empty()){ // { 추후에 뒤 추할 것
+	// check if LOAD has already done
+	if (fpgrowth->getHeaderTable()->getindexTable().empty() || fpgrowth->getHeaderTable()->getdataTable().empty()){ 
 			return false;
 		}
 	fpgrowth->printList();
@@ -139,9 +161,15 @@ bool Manager::PRINT_ITEMLIST() {
 	return true;
 }
 
-// bool Manager::PRINT_FPTREE() {
-	
-// }
+bool Manager::PRINT_FPTREE() {
+	if(fpgrowth->getTree()->getChildren().empty()){ //check if FPTREE is empty
+			return false;
+	}
+
+	fpgrowth->getHeaderTable()->ascendingIndexTable(); //change Header table in ascending order
+	fpgrowth->printTree(); //print tree
+	return true;
+}
 
 // bool Manager::PRINT_BPTREE(char* item, int min_frequency) {
 	
