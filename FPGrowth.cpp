@@ -1,7 +1,11 @@
 #include "FPGrowth.h"
 
 FPGrowth::~FPGrowth() {
-    flog.close();
+
+    table->~HeaderTable(); //delete all the tree nodes except root node
+    delete fpTree; //delete root node
+    delete table; //dele table
+    // flog.close();
 }
 
 void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency) {
@@ -79,7 +83,7 @@ void FPGrowth::connectNode(HeaderTable* table, string item, FPNode* node) {
 
 bool FPGrowth::printList() { //print the index table
 
-    list<pair<int, string>> ptr = table->getindexTable();
+    list<pair<int, string>> ptr = table->getindexTable(); //get index table
 
     list<pair<int, string>>::iterator it = ptr.begin();
 

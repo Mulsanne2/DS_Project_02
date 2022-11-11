@@ -9,7 +9,7 @@ private:
 	map<string, FPNode*> dataTable;
 public:
 	HeaderTable() { }
-	// ~HeaderTable();
+	~HeaderTable();
 	void insertTable(char* item, int frequency);
 	void makeDataTable(); //make data table from index table
 	list<pair<int, string>> getindexTable() { return indexTable; }

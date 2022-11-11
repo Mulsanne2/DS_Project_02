@@ -1,9 +1,24 @@
 #include "HeaderTable.h"
 
-// HeaderTable::~HeaderTable() {
-	//1) delete insert Table
-	//2) delete data Table
-// }
+HeaderTable::~HeaderTable() {
+	//1) delete data Table
+	FPNode *toDelete;
+	FPNode *nextDelete;
+	map<string, FPNode *>::iterator iter1 = dataTable.begin();
+	while(iter1!=dataTable.end()){
+		toDelete = iter1->second; //get the fist node from data table
+		while(toDelete!=NULL){
+			nextDelete = toDelete->getNext(); //store next node to delete
+			toDelete->setNext(NULL); //erase next pointer
+			delete toDelete; //delete currnet node
+			toDelete = nextDelete; //move to next node
+		}
+		iter1++;
+	}
+
+	// 2) delete index Table
+	indexTable.clear();
+}
 
 void HeaderTable::insertTable(char* item, int frequency) {
 	indexTable.push_back(make_pair(frequency, item));

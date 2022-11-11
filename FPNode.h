@@ -13,7 +13,7 @@ private:
 	map<string, FPNode*> children;
 public:
 	FPNode();
-	// ~FPNode();
+	~FPNode();
 	void setParent(FPNode* node) { this->parent = node; }
 	void setNext(FPNode* node) { next = node; }
 	void pushchildren(string item, FPNode* node) { children.insert(map<string, FPNode*>::value_type(item, node)); }

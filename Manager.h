@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include "FPGrowth.h"
-// #include "BpTree.h"
+#include "BpTree.h"
 using namespace std;
 
 class Manager
@@ -10,7 +10,7 @@ class Manager
 private:
 	char* cmd; //to read each command
 	FPGrowth* fpgrowth;
-	// BpTree* bptree;
+	BpTree* bptree;
 	int threshold;
 
 public:

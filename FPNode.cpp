@@ -8,10 +8,16 @@ FPNode::FPNode()	//constructor
 }
 
 
-// FPNode::~FPNode()//destructor
-// {
-
-// }
+FPNode::~FPNode()//destructor
+{
+	parent = NULL;
+	next = NULL;
+	// delete all the children map nodes
+	map<string, FPNode *>::iterator iter = children.begin();
+	while(iter!=children.end()){
+		children.erase(iter++);
+	}
+}
 
 FPNode* FPNode::getChildrenNode(string item) {
 	map<string, FPNode*>::iterator it = children.find(item);

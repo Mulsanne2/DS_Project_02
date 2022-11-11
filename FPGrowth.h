@@ -17,7 +17,7 @@ private:
 public:
 	FPGrowth(ofstream *fout, int threshold = 3) {
 		this->threshold = threshold;
-		flog.open("result.txt", ios::app);
+		// flog.open("result.txt", ios::app);
 		flog.setf(ios::fixed);
 		fpTree = new FPNode;
 		table = new HeaderTable;
@@ -25,8 +25,6 @@ public:
 	}
 	~FPGrowth();
 	void createTable(char *item, int frequency) { table->insertTable(item, frequency); }
-
-	//!!!!!!밑에꺼 해야한다.
 	void createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency);
 	void connectNode(HeaderTable* table, string item, FPNode* node);
 
