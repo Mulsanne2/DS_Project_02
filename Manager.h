@@ -14,15 +14,10 @@ private:
 	int threshold;
 
 public:
-	// Manager(int threshold, int bpOrder)	//constructor  bpOrder은 bptree를 위한것이니 일단 냅두자.
-	// {
-	// 	/* You must fill here */
-	// }
-
-	/*나중에 지우기!!*/
-	Manager(int threshold){
+	Manager(int threshold, int bpOrder){
 		fpgrowth = new FPGrowth(&flog, threshold);
 		this->threshold = threshold;
+		bptree = new BpTree(&flog, bpOrder);
 	}
 
 	// ~Manager()//destructor
@@ -36,8 +31,7 @@ public:
 
 	void run(const char* command);
 	bool LOAD();
-	// bool BTLOAD();
-	
+	bool BTLOAD();
 	bool PRINT_ITEMLIST();
 	bool PRINT_FPTREE();
 

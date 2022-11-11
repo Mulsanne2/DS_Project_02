@@ -53606,3 +53606,1533 @@ cream 2
 {mineral water, 1042}
 (mineral water, 1042)
 =========================
+=========LOAD=========
+ ERROR 100
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+=========PRINT_FPTREE=========
+ ERROR 400
+=======================
+
+=========LOAD=========
+ ERROR 100
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+=========PRINT_FPTREE=========
+ ERROR 400
+=======================
+
+=========LOAD=========
+ ERROR 100
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+=========PRINT_FPTREE=========
+ ERROR 400
+=======================
+
+=========LOAD=========
+ ERROR 100
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+=========PRINT_FPTREE=========
+ ERROR 400
+=======================
+
+=========LOAD=========
+ ERROR 100
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+=========PRINT_FPTREE=========
+ ERROR 400
+=======================
+
+=========LOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================
+=========LOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{almonds, 2}
+(almonds, 1)(burgers, 1)(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(almonds, 1)(hot dogs, 1)(turkey, 1)(burgers, 1)(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{black tea, 2}
+(black tea, 1)(fresh tuna, 1)(salmon, 1)(turkey, 1)(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(black tea, 1)(escalope, 1)(frozen smoothie, 1)(salmon, 1)(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+{brownies, 2}
+(brownies, 1)(hot dogs, 1)(pancakes, 1)(avocado, 1)(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(brownies, 1)(white wine, 1)(chocolate, 1)(green tea, 2)(spaghetti, 5)
+{escalope, 2}
+(escalope, 1)(frozen smoothie, 1)(salmon, 1)(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+(escalope, 1)(fresh tuna, 1)(frozen smoothie, 1)(frozen vegetables, 1)(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{fresh tuna, 2}
+(fresh tuna, 1)(salmon, 1)(turkey, 1)(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(fresh tuna, 1)(frozen smoothie, 1)(frozen vegetables, 1)(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{frozen smoothie, 2}
+(frozen smoothie, 1)(salmon, 1)(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+(frozen smoothie, 1)(frozen vegetables, 1)(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{frozen vegetables, 2}
+(frozen vegetables, 1)(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+(frozen vegetables, 1)(ground beef, 1)(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{grated cheese, 2}
+(grated cheese, 1)(pasta, 1)(shrimp, 1)(avocado, 1)(honey, 1)(white wine, 1)(burgers, 1)
+(grated cheese, 1)(white wine, 1)(ground beef, 1)(mineral water, 3)(spaghetti, 5)
+{hot dogs, 2}
+(hot dogs, 1)(pancakes, 1)(avocado, 1)(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(hot dogs, 1)(turkey, 1)(burgers, 1)(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{pancakes, 2}
+(pancakes, 1)(body spray, 1)(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(pancakes, 1)(avocado, 1)(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{pasta, 2}
+(pasta, 1)(shrimp, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+(pasta, 1)(shrimp, 1)(avocado, 1)(honey, 1)(white wine, 1)(burgers, 1)
+{salmon, 2}
+(salmon, 1)(turkey, 1)(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(salmon, 1)(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+{shrimp, 2}
+(shrimp, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+(shrimp, 1)(avocado, 1)(honey, 1)(white wine, 1)(burgers, 1)
+{turkey, 2}
+(turkey, 1)(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(turkey, 1)(burgers, 1)(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{whole wheat rice, 2}
+(whole wheat rice, 1)(energy bar, 1)(milk, 1)(mineral water, 1)(green tea, 1)
+(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{avocado, 3}
+(avocado, 1)(honey, 1)(white wine, 1)(burgers, 1)
+(avocado, 1)(milk, 1)(spaghetti, 4)(soup, 12)
+(avocado, 1)(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{body spray, 3}
+(body spray, 1)(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(body spray, 1)(chicken, 1)(green tea, 4)(soup, 12)
+{chicken, 3}
+(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(chicken, 1)(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chicken, 1)(green tea, 4)(soup, 12)
+{energy bar, 3}
+(energy bar, 1)(milk, 1)(mineral water, 1)(green tea, 1)
+(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+(energy bar, 1)(protein bar, 1)(soup, 12)
+{honey, 3}
+(honey, 1)(protein bar, 1)(french fries, 1)(milk, 1)
+(honey, 1)(white wine, 1)(burgers, 1)
+(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{protein bar, 3}
+(protein bar, 1)(french fries, 1)(milk, 1)
+(protein bar, 1)(green tea, 4)(soup, 12)
+(protein bar, 1)(soup, 12)
+{white wine, 3}
+(white wine, 1)(burgers, 1)
+(white wine, 1)(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(white wine, 1)(ground beef, 1)(mineral water, 3)(spaghetti, 5)
+{burgers, 4}
+(burgers, 1)
+(burgers, 1)(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+(burgers, 1)(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(burgers, 1)(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{ground beef, 4}
+(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+(ground beef, 1)(mineral water, 3)(spaghetti, 5)
+(ground beef, 1)(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================
+=========LOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{almonds, 2}
+(almonds, 1)(burgers, 1)(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(almonds, 1)(hot dogs, 1)(turkey, 1)(burgers, 1)(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{black tea, 2}
+(black tea, 1)(fresh tuna, 1)(salmon, 1)(turkey, 1)(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(black tea, 1)(escalope, 1)(frozen smoothie, 1)(salmon, 1)(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+{brownies, 2}
+(brownies, 1)(hot dogs, 1)(pancakes, 1)(avocado, 1)(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(brownies, 1)(white wine, 1)(chocolate, 1)(green tea, 2)(spaghetti, 5)
+{escalope, 2}
+(escalope, 1)(frozen smoothie, 1)(salmon, 1)(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+(escalope, 1)(fresh tuna, 1)(frozen smoothie, 1)(frozen vegetables, 1)(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{fresh tuna, 2}
+(fresh tuna, 1)(salmon, 1)(turkey, 1)(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(fresh tuna, 1)(frozen smoothie, 1)(frozen vegetables, 1)(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{frozen smoothie, 2}
+(frozen smoothie, 1)(salmon, 1)(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+(frozen smoothie, 1)(frozen vegetables, 1)(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{frozen vegetables, 2}
+(frozen vegetables, 1)(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+(frozen vegetables, 1)(ground beef, 1)(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{grated cheese, 2}
+(grated cheese, 1)(pasta, 1)(shrimp, 1)(avocado, 1)(honey, 1)(white wine, 1)(burgers, 1)
+(grated cheese, 1)(white wine, 1)(ground beef, 1)(mineral water, 3)(spaghetti, 5)
+{hot dogs, 2}
+(hot dogs, 1)(pancakes, 1)(avocado, 1)(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(hot dogs, 1)(turkey, 1)(burgers, 1)(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{pancakes, 2}
+(pancakes, 1)(body spray, 1)(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(pancakes, 1)(avocado, 1)(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{pasta, 2}
+(pasta, 1)(shrimp, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+(pasta, 1)(shrimp, 1)(avocado, 1)(honey, 1)(white wine, 1)(burgers, 1)
+{salmon, 2}
+(salmon, 1)(turkey, 1)(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(salmon, 1)(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+{shrimp, 2}
+(shrimp, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+(shrimp, 1)(avocado, 1)(honey, 1)(white wine, 1)(burgers, 1)
+{turkey, 2}
+(turkey, 1)(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(turkey, 1)(burgers, 1)(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{whole wheat rice, 2}
+(whole wheat rice, 1)(energy bar, 1)(milk, 1)(mineral water, 1)(green tea, 1)
+(whole wheat rice, 1)(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{avocado, 3}
+(avocado, 1)(honey, 1)(white wine, 1)(burgers, 1)
+(avocado, 1)(milk, 1)(spaghetti, 4)(soup, 12)
+(avocado, 1)(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{body spray, 3}
+(body spray, 1)(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(body spray, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(body spray, 1)(chicken, 1)(green tea, 4)(soup, 12)
+{chicken, 3}
+(chicken, 1)(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(chicken, 1)(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chicken, 1)(green tea, 4)(soup, 12)
+{energy bar, 3}
+(energy bar, 1)(milk, 1)(mineral water, 1)(green tea, 1)
+(energy bar, 1)(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+(energy bar, 1)(protein bar, 1)(soup, 12)
+{honey, 3}
+(honey, 1)(protein bar, 1)(french fries, 1)(milk, 1)
+(honey, 1)(white wine, 1)(burgers, 1)
+(honey, 1)(mineral water, 1)(spaghetti, 4)(soup, 12)
+{protein bar, 3}
+(protein bar, 1)(french fries, 1)(milk, 1)
+(protein bar, 1)(green tea, 4)(soup, 12)
+(protein bar, 1)(soup, 12)
+{white wine, 3}
+(white wine, 1)(burgers, 1)
+(white wine, 1)(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(white wine, 1)(ground beef, 1)(mineral water, 3)(spaghetti, 5)
+{burgers, 4}
+(burgers, 1)
+(burgers, 1)(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+(burgers, 1)(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+(burgers, 1)(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{ground beef, 4}
+(ground beef, 1)(milk, 1)(mineral water, 3)(spaghetti, 5)
+(ground beef, 1)(mineral water, 3)(spaghetti, 5)
+(ground beef, 1)(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+(ground beef, 1)(chocolate, 2)(eggs, 2)(soup, 12)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================
+=========LOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================
+=========LOAD=========
+SUCCESS
+=======================
+
+=========LOAD=========
+ ERROR 100
+=======================
+
+=========LOAD=========
+ ERROR 100
+=======================
+
+=========PRINT_ITEMPLIST=========
+ ERROR 300
+=======================
+
+=========PRINT_FPTREE=========
+ ERROR 400
+=======================
+
+=========LOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================
+=========LOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================
+=========LOAD=========
+SUCCESS
+=======================
+
+=========LOAD=========
+SUCCESS
+=======================
+
+=========BTLOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================
+=========LOAD=========
+SUCCESS
+=======================
+
+=========BTLOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================
+=========LOAD=========
+SUCCESS
+=======================
+
+=========LOAD=========
+SUCCESS
+=======================
+
+=========BTLOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================
+=========LOAD=========
+SUCCESS
+=======================
+
+=========BTLOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+soup 12
+spaghetti 9
+green tea 9
+mineral water 7
+milk 5
+french fries 5
+eggs 5
+chocolate 5
+ground beef 4
+burgers 4
+white wine 3
+protein bar 3
+honey 3
+energy bar 3
+chicken 3
+body spray 3
+avocado 3
+whole wheat rice 2
+turkey 2
+shrimp 2
+salmon 2
+pasta 2
+pancakes 2
+hot dogs 2
+grated cheese 2
+frozen vegetables 2
+frozen smoothie 2
+fresh tuna 2
+escalope 2
+brownies 2
+black tea 2
+almonds 2
+whole wheat pasta 1
+toothpaste 1
+tomatoes 1
+soda 1
+shampoo 1
+shallot 1
+red wine 1
+pet food 1
+pepper 1
+parmesan cheese 1
+meatballs 1
+ham 1
+gums 1
+fresh bread 1
+extra dark chocolate 1
+energy drink 1
+cottage cheese 1
+cookies 1
+carrots 1
+bug spray 1
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{chocolate, 5}
+(chocolate, 2)(eggs, 2)(soup, 12)
+(chocolate, 1)(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(chocolate, 1)(green tea, 2)(spaghetti, 5)
+(chocolate, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{eggs, 5}
+(eggs, 1)(mineral water, 3)(spaghetti, 5)
+(eggs, 2)(soup, 12)
+(eggs, 1)(french fries, 1)(mineral water, 1)(soup, 12)
+(eggs, 1)(french fries, 2)(green tea, 4)(soup, 12)
+{french fries, 5}
+(french fries, 1)(milk, 1)
+(french fries, 1)(mineral water, 1)(soup, 12)
+(french fries, 2)(green tea, 4)(soup, 12)
+(french fries, 1)(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{milk, 5}
+(milk, 1)(mineral water, 1)(green tea, 1)
+(milk, 1)
+(milk, 1)(spaghetti, 4)(soup, 12)
+(milk, 1)(mineral water, 3)(spaghetti, 5)
+(milk, 1)(green tea, 2)(spaghetti, 4)(soup, 12)
+{mineral water, 7}
+(mineral water, 1)(green tea, 1)
+(mineral water, 3)(spaghetti, 5)
+(mineral water, 1)(green tea, 2)(spaghetti, 5)
+(mineral water, 1)(soup, 12)
+(mineral water, 1)(spaghetti, 4)(soup, 12)
+{green tea, 9}
+(green tea, 1)
+(green tea, 2)(spaghetti, 5)
+(green tea, 4)(soup, 12)
+(green tea, 2)(spaghetti, 4)(soup, 12)
+{spaghetti, 9}
+(spaghetti, 5)
+(spaghetti, 4)(soup, 12)
+{soup, 12}
+(soup, 12)
+=========================

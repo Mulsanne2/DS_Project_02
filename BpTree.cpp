@@ -57,7 +57,3 @@ void BpTree::printFrequentPatterns(set<string> pFrequentPattern, string item) {
 		*fout << ", ";
 	}
 }
-
-BpTree::~BpTree(){
-	
-}

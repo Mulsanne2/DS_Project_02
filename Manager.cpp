@@ -33,6 +33,16 @@ void Manager::run(const char* command)
 			}
 		}
 
+		else if (strcmp(temp, "BTLOAD") == 0)
+		{
+			if(BTLOAD()){
+				printSuccessCode("BTLOAD");
+			}
+			else{
+				printErrorCode("BTLOAD", 200);
+			}
+		}
+
 		else if (strcmp(temp, "PRINT_ITEMLIST") == 0) // check if instruction is PRINT_ITEMLIST
 		{
 			if (!PRINT_ITEMLIST())
@@ -142,21 +152,72 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 	return true;
 }
 
+bool Manager::BTLOAD() //read result.txt and make B+Tree
+{
+	//check BTLOAD has Already Done
+	/*
+	DO IT!
+	*/
 
+	ifstream ReadResult;
+	ReadResult.open("result.txt");
+	if (!ReadResult) // check if result.txt is opened
+	{
+		flog << "File Open Error" << endl;
+		cout << "File Open Error" << endl;
+		return false;
+	}
+	string ResultLine;
+	while (!ReadResult.eof())
+	{
+		getline(ReadResult, ResultLine);
 
+		char *tempResult = new char[ResultLine.length() + 1];
+		strcpy(tempResult, ResultLine.c_str());
+		if(tempResult[0]==0)
+			continue;
 
-// bool Manager::BTLOAD()
-// {
-	
-// 	return true;
-// }
+		char *temp = strtok(tempResult, "\t"); //read frequecny number
+
+		if(temp[0]<48 || temp[0]>57){ //check first number is number
+			cout << "Wrong market.txt format" << endl;
+			flog << "Wrong market.txt format" << endl;
+			return false;
+		}
+
+		int FREQUENCY = stoi(temp);
+		temp = strtok(NULL, "\t");
+		set<string> lineList;
+		while(1){
+			if(temp==NULL)
+				break;
+			if (lineList.find(temp)!=lineList.end())// if there same item on the line return false
+				return false;
+
+			string Item = temp;
+			lineList.insert(Item); //insert into set
+			temp = strtok(NULL, "\t"); //move to next item
+		}
+
+		if(lineList.empty()) //if set is empty then move to next line
+			continue;
+
+		//insert BpTree
+		bptree->Insert(FREQUENCY, lineList);
+
+		delete[] tempResult;
+	}
+
+	ReadResult.close(); //close ifstream
+	return true;
+}
 
 bool Manager::PRINT_ITEMLIST() {
 	// check if LOAD has already done
 	if (fpgrowth->getHeaderTable()->getindexTable().empty() || fpgrowth->getHeaderTable()->getdataTable().empty()){ 
 			return false;
 		}
-	fpgrowth->printList();
+	fpgrowth->printList(); //print header table
 
 	return true;
 }
