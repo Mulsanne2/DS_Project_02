@@ -1,9 +1,9 @@
 2	almonds	burgers
-3	almonds	burgers	eggs
-4	almonds	burgers	eggs	soup
-5	almonds	burgers	soup
-6	almonds	eggs
-7	almonds	eggs	soup
+2	almonds	burgers	eggs
+2	almonds	burgers	eggs	soup
+2	almonds	burgers	soup
+2	almonds	eggs
+2	almonds	eggs	soup
 2	almonds	soup
 2	avocado	soup
 2	black tea	mineral water

@@ -42,9 +42,9 @@ bool BpTree::Insert(int key, set<string> set) {
 				splitIndexNode(CurNode);
 			CurNode = CurNode->getParent();
 		}
-		if(root->getParent())
-			root = root->getParent();
 		}
+		if (root->getParent())
+		root = root->getParent();
 	}
 	else{
 		FindingNode->getDataMap()->find(key)->second->InsertList(set); //put item in insert list
@@ -73,7 +73,37 @@ BpTreeNode* BpTree::searchDataNode(int n) {
 }
 
 void BpTree::splitDataNode(BpTreeNode* pDataNode) {
+	BpTreeDataNode *newDataNode = new BpTreeDataNode;
+	int INDEX = ceil(double(order) / 2);
+	for (int i = 0; i < INDEX;i++){ //divide into two Data node, pDataNode will be left side node
+		newDataNode->insertDataMap(pDataNode->getDataMap()->rbegin()->first, pDataNode->getDataMap()->rbegin()->second);
+		pDataNode->deleteMap(newDataNode->getDataMap()->begin()->first);
+	}
+	if(!pDataNode->getNext()){ //if pDataNode doesn't have right node
+		newDataNode->setPrev(pDataNode);
+		pDataNode->setNext(newDataNode);
+	}
+	else{ //if pDataNode has right node
+		newDataNode->setNext(pDataNode->getNext());
+		pDataNode->getNext()->setPrev(newDataNode);
+		pDataNode->setNext(newDataNode);
+		newDataNode->setPrev(pDataNode);
+	}
+
+	if(pDataNode->getParent()){//if pDataNode has parent node, then just add on the parent node
+		BpTreeNode *ParentNode = pDataNode->getParent();
+		pDataNode->getParent()->insertIndexMap(newDataNode->getDataMap()->begin()->first, newDataNode);
+		newDataNode->setParent(ParentNode);
+	}
+	else{
+		BpTreeNode *ParentNode = new BpTreeIndexNode;
+		ParentNode->insertIndexMap(newDataNode->getDataMap()->begin()->first, newDataNode);
+		ParentNode->setMostLeftChild(pDataNode);
+		pDataNode->setParent(ParentNode);
+		newDataNode->setParent(ParentNode);
+	}
 	
+
 }
 
 void BpTree::splitIndexNode(BpTreeNode* pIndexNode) {
