@@ -4,9 +4,9 @@
 5	almonds	burgers	soup
 6	almonds	eggs
 7	almonds	eggs	soup
-2	almonds	soup
-2	avocado	soup
-2	black tea	mineral water
+8	almonds	soup
+9	avocado	soup
+10	black tea	mineral water
 2	black tea	mineral water	salmon
 2	black tea	mineral water	salmon	spaghetti
 2	black tea	mineral water	spaghetti

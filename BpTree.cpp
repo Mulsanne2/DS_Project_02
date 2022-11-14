@@ -75,6 +75,7 @@ BpTreeNode* BpTree::searchDataNode(int n) {
 void BpTree::splitDataNode(BpTreeNode* pDataNode) {
 	BpTreeDataNode *newDataNode = new BpTreeDataNode;
 	int INDEX = ceil(double(order) / 2);
+	// int INDEX = order/2;
 	for (int i = 0; i < INDEX;i++){ //divide into two Data node, pDataNode will be left side node
 		newDataNode->insertDataMap(pDataNode->getDataMap()->rbegin()->first, pDataNode->getDataMap()->rbegin()->second);
 		pDataNode->deleteMap(newDataNode->getDataMap()->begin()->first);
@@ -107,8 +108,39 @@ void BpTree::splitDataNode(BpTreeNode* pDataNode) {
 }
 
 void BpTree::splitIndexNode(BpTreeNode* pIndexNode) {
+	BpTreeIndexNode* newIndexNode = new BpTreeIndexNode;
+	int INDEX = order / 2;
+	for (int i = 0; i < INDEX; i++)
+	{ // divide into two Index Node, pIndexNode will be left index node
+		newIndexNode->insertIndexMap(pIndexNode->getIndexMap()->rbegin()->first, pIndexNode->getIndexMap()->rbegin()->second);
+		newIndexNode->getIndexMap()->begin()->second->setParent(newIndexNode);
+		pIndexNode->deleteMap(newIndexNode->getIndexMap()->rbegin()->first);
+	}
 	
+	int UpNum = pIndexNode->getIndexMap()->rbegin()->first; //get center node's number which going up
+	BpTreeNode *UpNode = pIndexNode->getIndexMap()->rbegin()->second; // get center node's treeNode which going up
+	pIndexNode->deleteMap(UpNum); //delete center node in previous node
+
+	if(!pIndexNode->getParent()){ //when pIndexNode doesn't have parent node
+		BpTreeIndexNode *newUpIndexNode = new BpTreeIndexNode;
+		newUpIndexNode->setMostLeftChild(pIndexNode);
+		newUpIndexNode->insertIndexMap(UpNum, newIndexNode);
+		newIndexNode->setMostLeftChild(UpNode);
+		//set the new parents
+		UpNode->setParent(newIndexNode);
+		newIndexNode->setParent(newUpIndexNode);
+		pIndexNode->setParent(newUpIndexNode);
+	}
+	else{ //when pIndexNode have parent node then put into parent node
+		BpTreeNode *UpIndexNode = pIndexNode->getParent();
+		UpIndexNode->insertIndexMap(UpNum, newIndexNode);
+		newIndexNode->setParent(UpIndexNode); //set parent
+		newIndexNode->setMostLeftChild(UpNode);
+		UpNode->setParent(newIndexNode); //set parent
+	}
+
 }
+
 bool BpTree::excessDataNode(BpTreeNode* pDataNode) {
 	if (pDataNode->getDataMap()->size() > order - 1) return true;//order is equal to the number of elements 
 	else return false;
