@@ -153,15 +153,51 @@ bool BpTree::excessIndexNode(BpTreeNode* pIndexNode) {
 
 
 bool BpTree::printConfidence(string item, double item_frequency, double min_confidence)
-{
+{	
 
 	return true;
 }
 bool BpTree::printFrequency(string item, int min_frequency)//print winratio in ascending order
 {
+	bool bar = false;
+	if (root == NULL)
+		return false;
 
-	return true;
+	BpTreeNode *CurNode = root;
+
+	while (CurNode->getMostLeftChild())
+	{
+		CurNode = CurNode->getMostLeftChild();
+	}
+	// while(CurNode){
+	// 	map<int, FrequentPatternNode *>* Data = CurNode->getDataMap();
+	// 	for (auto iter = Data->begin(); iter != Data->end();iter++){ //approach to every data node
+	// 		if (iter->first >= min_frequency) //check if frequency is over min_frequency
+	// 		{
+	// 		set<string> ITEMS = iter->second->getList().begin()->second; //get the multimap
+	// 		for (auto iter2 = ITEMS.begin(); iter2 != ITEMS.end();iter2++){
+
+	// 			if(iter2->find(item) != iter2->end()){
+	// 				if(bar==false){
+	// 					cout << "========PRINT_BPTREE========" << endl
+	// 						 << "FrequentPattern	Frequency" << endl;
+	// 					bar = true;
+	// 				}
+	// 				cout << "{" << iter2 << "}\t" << iter->first << endl;
+	// 			}
+
+	// 		}
+	// 		}
+	// 	}
+	// 	CurNode = CurNode->getNext();
+	// 	}
+		if (bar == false)
+		return false;
+		cout << "==========================" << endl
+			 << endl;
+		return true;
 }
+
 bool BpTree::printRange(string item, int min, int max) {
 
 	return true;

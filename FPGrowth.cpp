@@ -138,8 +138,10 @@ bool FPGrowth::printTree() {
             LeafTraveler = LeafTraveler->getNext();
         }
     }
-    cout << "=========================" << endl;
-    *fout << "=========================" << endl;
+    cout << "=========================" << endl
+         << endl;
+    *fout << "=========================" << endl
+          << endl;
 
     return true;
 }

@@ -34,10 +34,10 @@ public:
 	bool BTLOAD();
 	bool PRINT_ITEMLIST();
 	bool PRINT_FPTREE();
-
+	bool PRINT_BPTREE();
 	// bool PRINT_RANGE(char* item, int start, int end);
 	// bool PRINT_CONFIDENCE(char* item, double rate);
-	// bool PRINT_BPTREE(char* item, int min_frequency);
+	
 
 	void printErrorCode(string str, int n);
 	void printSuccessCode(string str);

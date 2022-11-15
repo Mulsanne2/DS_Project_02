@@ -21,7 +21,7 @@ void Manager::run(const char* command)
 		strcpy(cmd, Instruction.c_str());
 		if (cmd[0] == 0) //check if there is only NULL on line
 			continue;
-		char *temp = strtok(cmd, " ");
+		char *temp = strtok(cmd, "\t");
 
 		if (strcmp(temp, "LOAD") == 0) // check if instruction is LOAD
 		{
@@ -58,6 +58,14 @@ void Manager::run(const char* command)
 				printErrorCode("PRINT_FPTREE", 400);
 			}
 		}
+		
+		else if (strcmp(temp, "PRINT_BPTREE")==0)
+		{	
+			if(!PRINT_BPTREE()){
+				printErrorCode("PRINT_BPTREE", 500);
+			}
+		}
+
 		delete[] cmd;
 	}
 	fin.close();
@@ -131,9 +139,29 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 		for (iter = INDEXTABLE.begin(); iter!=INDEXTABLE.end();iter++){ //visit all index table item by frequency
 			if (ItemLine2.find(iter->second) != string::npos && iter->first >= threshold)
 			{										// if item is in the market txt.line
+				bool findItem = true; //check if line has item
+				// string TEMP = iter->second; // get item
 				int num = ItemLine2.find(iter->second);
-				if (ItemLine2[num - 1] == '\t' || num==0)// to solve when it has same name ex) chocolate and extra dark chocolate
-					SortedItem.push_back(iter->second);	 // push item in to SortedItem list
+				if (ItemLine2[num - 1] == ' '|| ItemLine2[num + iter->second.length()]==' '){
+					findItem = false;
+					// continue;
+				}
+				if(findItem==false){ //find another item
+					while(1){
+						if (ItemLine2.find(iter->second, num + 1) == string::npos) //find another item
+							break;
+						num = ItemLine2.find(iter->second, num + 1);
+						if (ItemLine2[num - 1] == ' ' || ItemLine2[num + iter->second.length()] == ' ')
+						{
+							findItem = false;
+						}
+						else //if we finded the item then put in list
+							findItem = true;
+					}
+				}
+				
+				if(findItem==true) //if line has it's item then push into list
+					SortedItem.push_back(iter->second); // push item in to SortedItem list
 			}
 		}
 
@@ -142,8 +170,10 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 
 		// for (string i : SortedItem){
 		// 	cout << i << " ";
+		// 	flog << i << " ";
 		// }
 		// cout << endl;
+		// flog << endl;
 
 		fpgrowth->createFPtree(fpgrowth->getTree(), fpgrowth->getHeaderTable(), SortedItem, 1); //push on FPTree
 	}
@@ -232,9 +262,21 @@ bool Manager::PRINT_FPTREE() {
 	return true;
 }
 
-// bool Manager::PRINT_BPTREE(char* item, int min_frequency) {
-	
-// }
+bool Manager::PRINT_BPTREE() {
+	char *fitem = strtok(NULL, "\t");
+	char *fnum = strtok(NULL, "\t");
+	if(fitem==NULL||fnum==NULL) //check if input is NULL
+		return false;
+	if (fnum[0] < 48 || fnum[0] > 57) // check if fnum is number
+		return false;
+	int MIN_FRE = stoi(fnum); // change into int
+	string ITEM = fitem; //change into string
+
+	if(bptree->printFrequency(ITEM, MIN_FRE))
+		return true;
+	else
+		return false;
+}
 
 // bool Manager::PRINT_CONFIDENCE(char* item, double rate) {
 	
