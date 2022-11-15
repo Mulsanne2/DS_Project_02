@@ -16300,3 +16300,835 @@ FrequentPattern	Frequency
 {eggs, soup} 4
 ==========================
 
+=========LOAD=========
+SUCCESS
+=======================
+
+=========BTLOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+mineral water 1042
+eggs 792
+french fries 765
+spaghetti 757
+chocolate 723
+green tea 647
+milk 578
+frozen vegetables 464
+burgers 442
+pancakes 421
+ground beef 417
+cake 384
+low fat yogurt 336
+shrimp 321
+escalope 320
+tomatoes 317
+frozen smoothie 297
+whole wheat rice 283
+turkey 281
+chicken 277
+honey 233
+cookies 220
+soup 219
+grated cheese 211
+champagne 209
+fresh bread 207
+salmon 183
+brownies 153
+butter 151
+cottage cheese 150
+avocado 150
+hot dogs 146
+tomato juice 138
+ham 133
+vegetables mix 130
+red wine 130
+light mayo 127
+pepper 126
+energy bar 121
+energy drink 117
+cereals 113
+french wine 112
+yogurt cake 108
+strawberries 103
+fresh tuna 103
+whole wheat pasta 99
+meatballs 98
+almonds 97
+mushroom cream sauce 95
+muffins 95
+parmesan cheese 87
+rice 80
+fromage blanc 74
+pasta 73
+protein bar 72
+mint 72
+carrots 72
+eggplant 71
+white wine 69
+body spray 66
+black tea 64
+gums 60
+barbecue sauce 56
+melons 53
+cider 53
+nonfat milk 52
+magazines 52
+light cream 52
+yams 48
+tomato sauce 47
+whole weat flour 44
+shallot 44
+flax seed 44
+extra dark chocolate 44
+green beans 43
+green grapes 41
+salt 40
+bug spray 40
+antioxydant juice 40
+strong cheese 39
+clothes accessories 37
+zucchini 35
+sparkling water 34
+toothpaste 33
+blueberries 33
+bacon 33
+gluten free bar 32
+pet food 31
+soda 30
+spinach 28
+pickles 28
+candy bars 27
+burger sauce 27
+mayonnaise 26
+dessert wine 24
+shampoo 23
+mint green tea 23
+cauliflower 23
+salad 22
+chocolate bread 22
+asparagus 22
+hand protein bar 21
+chili 21
+tea 18
+oatmeal 18
+mashed potato 18
+corn 18
+babies food 18
+sandwich 17
+ketchup 17
+chutney 14
+bramble 6
+napkins 3
+water spray 2
+cream 2
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{milk, 578}
+(milk, 8)(green tea, 52)(mineral water, 1042)
+(milk, 29)(french fries, 422)
+(milk, 32)(spaghetti, 311)
+(milk, 29)(spaghetti, 176)(mineral water, 1042)
+(milk, 2)(green tea, 13)(spaghetti, 69)(french fries, 422)
+(milk, 9)(chocolate, 39)(eggs, 248)(mineral water, 1042)
+(milk, 2)(chocolate, 4)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 19)(chocolate, 114)(mineral water, 1042)
+(milk, 20)(eggs, 248)(mineral water, 1042)
+(milk, 22)(chocolate, 205)
+(milk, 4)(green tea, 73)(french fries, 422)
+(milk, 11)(chocolate, 66)(spaghetti, 311)
+(milk, 2)(green tea, 24)(french fries, 166)(eggs, 544)
+(milk, 12)(french fries, 166)(eggs, 544)
+(milk, 2)(green tea, 8)(chocolate, 27)(french fries, 166)(eggs, 544)
+(milk, 101)
+(milk, 3)(chocolate, 45)(eggs, 544)
+(milk, 8)(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(milk, 2)(chocolate, 8)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(milk, 59)(mineral water, 1042)
+(milk, 2)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 5)(chocolate, 22)(spaghetti, 84)(eggs, 544)
+(milk, 31)(green tea, 199)
+(milk, 3)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 3)(green tea, 11)(chocolate, 45)(eggs, 544)
+(milk, 2)(chocolate, 5)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 6)(green tea, 18)(chocolate, 114)(mineral water, 1042)
+(milk, 6)(spaghetti, 84)(eggs, 544)
+(milk, 4)(green tea, 44)(eggs, 544)
+(milk, 9)(chocolate, 84)(french fries, 422)
+(milk, 34)(eggs, 544)
+(milk, 3)(green tea, 4)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 10)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(milk, 5)(spaghetti, 69)(french fries, 422)
+(milk, 7)(chocolate, 27)(french fries, 166)(eggs, 544)
+(milk, 1)(green tea, 11)(spaghetti, 84)(eggs, 544)
+(milk, 4)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 3)(green tea, 19)(eggs, 248)(mineral water, 1042)
+(milk, 2)(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 14)(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(milk, 11)(french fries, 144)(mineral water, 1042)
+(milk, 3)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(milk, 9)(green tea, 40)(spaghetti, 311)
+(milk, 2)(green tea, 2)(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(milk, 4)(green tea, 16)(french fries, 144)(mineral water, 1042)
+(milk, 1)(green tea, 5)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(milk, 1)(green tea, 2)(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 1)(green tea, 3)(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(milk, 3)(green tea, 18)(chocolate, 66)(spaghetti, 311)
+(milk, 1)(green tea, 4)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 3)(green tea, 12)(chocolate, 84)(french fries, 422)
+(milk, 2)(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(milk, 1)(green tea, 16)(spaghetti, 176)(mineral water, 1042)
+(milk, 2)(chocolate, 11)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(milk, 1)(green tea, 5)(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(milk, 1)(green tea, 3)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(milk, 1)(green tea, 36)(chocolate, 205)
+(milk, 1)(green tea, 4)(chocolate, 39)(eggs, 248)(mineral water, 1042)
+{green tea, 647}
+(green tea, 52)(mineral water, 1042)
+(green tea, 40)(spaghetti, 311)
+(green tea, 16)(spaghetti, 176)(mineral water, 1042)
+(green tea, 199)
+(green tea, 73)(french fries, 422)
+(green tea, 18)(chocolate, 66)(spaghetti, 311)
+(green tea, 13)(spaghetti, 69)(french fries, 422)
+(green tea, 24)(french fries, 166)(eggs, 544)
+(green tea, 11)(spaghetti, 84)(eggs, 544)
+(green tea, 18)(chocolate, 114)(mineral water, 1042)
+(green tea, 44)(eggs, 544)
+(green tea, 8)(chocolate, 27)(french fries, 166)(eggs, 544)
+(green tea, 19)(eggs, 248)(mineral water, 1042)
+(green tea, 11)(chocolate, 45)(eggs, 544)
+(green tea, 5)(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(green tea, 4)(chocolate, 39)(eggs, 248)(mineral water, 1042)
+(green tea, 16)(french fries, 144)(mineral water, 1042)
+(green tea, 4)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(green tea, 3)(chocolate, 22)(spaghetti, 84)(eggs, 544)
+(green tea, 12)(chocolate, 84)(french fries, 422)
+(green tea, 5)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(green tea, 36)(chocolate, 205)
+(green tea, 3)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(green tea, 2)(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(green tea, 3)(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(green tea, 4)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(green tea, 2)(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(green tea, 1)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(green tea, 1)(chocolate, 11)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+{chocolate, 723}
+(chocolate, 45)(eggs, 544)
+(chocolate, 5)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(chocolate, 39)(eggs, 248)(mineral water, 1042)
+(chocolate, 205)
+(chocolate, 66)(spaghetti, 311)
+(chocolate, 114)(mineral water, 1042)
+(chocolate, 22)(spaghetti, 84)(eggs, 544)
+(chocolate, 8)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(chocolate, 4)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(chocolate, 27)(french fries, 166)(eggs, 544)
+(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(chocolate, 84)(french fries, 422)
+(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(chocolate, 11)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+{spaghetti, 757}
+(spaghetti, 311)
+(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(spaghetti, 176)(mineral water, 1042)
+(spaghetti, 69)(french fries, 422)
+(spaghetti, 84)(eggs, 544)
+(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(spaghetti, 25)(french fries, 166)(eggs, 544)
+{french fries, 765}
+(french fries, 422)
+(french fries, 33)(eggs, 248)(mineral water, 1042)
+(french fries, 166)(eggs, 544)
+(french fries, 144)(mineral water, 1042)
+{eggs, 792}
+(eggs, 544)
+(eggs, 248)(mineral water, 1042)
+{mineral water, 1042}
+(mineral water, 1042)
+=========================
+
+========PRINT_BPTREE========
+FrequentPattern	Frequency
+{almonds, eggs} 2
+{burgers, eggs} 2
+{chicken, eggs} 2
+{eggs, french fries} 2
+{eggs, mineral water} 2
+{eggs, turkey} 2
+{almonds, burgers, eggs} 2
+{almonds, eggs, soup} 2
+{burgers, eggs, soup} 2
+{chicken, eggs, mineral water} 2
+{eggs, french fries, soup} 2
+{almonds, burgers, eggs, soup} 2
+{chocolate, eggs} 3
+{chocolate, eggs, soup} 3
+{eggs, soup} 4
+==========================
+
+=========LOAD=========
+SUCCESS
+=======================
+
+=========BTLOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+mineral water 1042
+eggs 792
+french fries 765
+spaghetti 757
+chocolate 723
+green tea 647
+milk 578
+frozen vegetables 464
+burgers 442
+pancakes 421
+ground beef 417
+cake 384
+low fat yogurt 336
+shrimp 321
+escalope 320
+tomatoes 317
+frozen smoothie 297
+whole wheat rice 283
+turkey 281
+chicken 277
+honey 233
+cookies 220
+soup 219
+grated cheese 211
+champagne 209
+fresh bread 207
+salmon 183
+brownies 153
+butter 151
+cottage cheese 150
+avocado 150
+hot dogs 146
+tomato juice 138
+ham 133
+vegetables mix 130
+red wine 130
+light mayo 127
+pepper 126
+energy bar 121
+energy drink 117
+cereals 113
+french wine 112
+yogurt cake 108
+strawberries 103
+fresh tuna 103
+whole wheat pasta 99
+meatballs 98
+almonds 97
+mushroom cream sauce 95
+muffins 95
+parmesan cheese 87
+rice 80
+fromage blanc 74
+pasta 73
+protein bar 72
+mint 72
+carrots 72
+eggplant 71
+white wine 69
+body spray 66
+black tea 64
+gums 60
+barbecue sauce 56
+melons 53
+cider 53
+nonfat milk 52
+magazines 52
+light cream 52
+yams 48
+tomato sauce 47
+whole weat flour 44
+shallot 44
+flax seed 44
+extra dark chocolate 44
+green beans 43
+green grapes 41
+salt 40
+bug spray 40
+antioxydant juice 40
+strong cheese 39
+clothes accessories 37
+zucchini 35
+sparkling water 34
+toothpaste 33
+blueberries 33
+bacon 33
+gluten free bar 32
+pet food 31
+soda 30
+spinach 28
+pickles 28
+candy bars 27
+burger sauce 27
+mayonnaise 26
+dessert wine 24
+shampoo 23
+mint green tea 23
+cauliflower 23
+salad 22
+chocolate bread 22
+asparagus 22
+hand protein bar 21
+chili 21
+tea 18
+oatmeal 18
+mashed potato 18
+corn 18
+babies food 18
+sandwich 17
+ketchup 17
+chutney 14
+bramble 6
+napkins 3
+water spray 2
+cream 2
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{milk, 578}
+(milk, 8)(green tea, 52)(mineral water, 1042)
+(milk, 29)(french fries, 422)
+(milk, 32)(spaghetti, 311)
+(milk, 29)(spaghetti, 176)(mineral water, 1042)
+(milk, 2)(green tea, 13)(spaghetti, 69)(french fries, 422)
+(milk, 9)(chocolate, 39)(eggs, 248)(mineral water, 1042)
+(milk, 2)(chocolate, 4)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 19)(chocolate, 114)(mineral water, 1042)
+(milk, 20)(eggs, 248)(mineral water, 1042)
+(milk, 22)(chocolate, 205)
+(milk, 4)(green tea, 73)(french fries, 422)
+(milk, 11)(chocolate, 66)(spaghetti, 311)
+(milk, 2)(green tea, 24)(french fries, 166)(eggs, 544)
+(milk, 12)(french fries, 166)(eggs, 544)
+(milk, 2)(green tea, 8)(chocolate, 27)(french fries, 166)(eggs, 544)
+(milk, 101)
+(milk, 3)(chocolate, 45)(eggs, 544)
+(milk, 8)(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(milk, 2)(chocolate, 8)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(milk, 59)(mineral water, 1042)
+(milk, 2)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 5)(chocolate, 22)(spaghetti, 84)(eggs, 544)
+(milk, 31)(green tea, 199)
+(milk, 3)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 3)(green tea, 11)(chocolate, 45)(eggs, 544)
+(milk, 2)(chocolate, 5)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 6)(green tea, 18)(chocolate, 114)(mineral water, 1042)
+(milk, 6)(spaghetti, 84)(eggs, 544)
+(milk, 4)(green tea, 44)(eggs, 544)
+(milk, 9)(chocolate, 84)(french fries, 422)
+(milk, 34)(eggs, 544)
+(milk, 3)(green tea, 4)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 10)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(milk, 5)(spaghetti, 69)(french fries, 422)
+(milk, 7)(chocolate, 27)(french fries, 166)(eggs, 544)
+(milk, 1)(green tea, 11)(spaghetti, 84)(eggs, 544)
+(milk, 4)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 3)(green tea, 19)(eggs, 248)(mineral water, 1042)
+(milk, 2)(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 14)(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(milk, 11)(french fries, 144)(mineral water, 1042)
+(milk, 3)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(milk, 9)(green tea, 40)(spaghetti, 311)
+(milk, 2)(green tea, 2)(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(milk, 4)(green tea, 16)(french fries, 144)(mineral water, 1042)
+(milk, 1)(green tea, 5)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(milk, 1)(green tea, 2)(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 1)(green tea, 3)(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(milk, 3)(green tea, 18)(chocolate, 66)(spaghetti, 311)
+(milk, 1)(green tea, 4)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 3)(green tea, 12)(chocolate, 84)(french fries, 422)
+(milk, 2)(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(milk, 1)(green tea, 16)(spaghetti, 176)(mineral water, 1042)
+(milk, 2)(chocolate, 11)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(milk, 1)(green tea, 5)(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(milk, 1)(green tea, 3)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(milk, 1)(green tea, 36)(chocolate, 205)
+(milk, 1)(green tea, 4)(chocolate, 39)(eggs, 248)(mineral water, 1042)
+{green tea, 647}
+(green tea, 52)(mineral water, 1042)
+(green tea, 40)(spaghetti, 311)
+(green tea, 16)(spaghetti, 176)(mineral water, 1042)
+(green tea, 199)
+(green tea, 73)(french fries, 422)
+(green tea, 18)(chocolate, 66)(spaghetti, 311)
+(green tea, 13)(spaghetti, 69)(french fries, 422)
+(green tea, 24)(french fries, 166)(eggs, 544)
+(green tea, 11)(spaghetti, 84)(eggs, 544)
+(green tea, 18)(chocolate, 114)(mineral water, 1042)
+(green tea, 44)(eggs, 544)
+(green tea, 8)(chocolate, 27)(french fries, 166)(eggs, 544)
+(green tea, 19)(eggs, 248)(mineral water, 1042)
+(green tea, 11)(chocolate, 45)(eggs, 544)
+(green tea, 5)(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(green tea, 4)(chocolate, 39)(eggs, 248)(mineral water, 1042)
+(green tea, 16)(french fries, 144)(mineral water, 1042)
+(green tea, 4)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(green tea, 3)(chocolate, 22)(spaghetti, 84)(eggs, 544)
+(green tea, 12)(chocolate, 84)(french fries, 422)
+(green tea, 5)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(green tea, 36)(chocolate, 205)
+(green tea, 3)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(green tea, 2)(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(green tea, 3)(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(green tea, 4)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(green tea, 2)(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(green tea, 1)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(green tea, 1)(chocolate, 11)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+{chocolate, 723}
+(chocolate, 45)(eggs, 544)
+(chocolate, 5)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(chocolate, 39)(eggs, 248)(mineral water, 1042)
+(chocolate, 205)
+(chocolate, 66)(spaghetti, 311)
+(chocolate, 114)(mineral water, 1042)
+(chocolate, 22)(spaghetti, 84)(eggs, 544)
+(chocolate, 8)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(chocolate, 4)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(chocolate, 27)(french fries, 166)(eggs, 544)
+(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(chocolate, 84)(french fries, 422)
+(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(chocolate, 11)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+{spaghetti, 757}
+(spaghetti, 311)
+(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(spaghetti, 176)(mineral water, 1042)
+(spaghetti, 69)(french fries, 422)
+(spaghetti, 84)(eggs, 544)
+(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(spaghetti, 25)(french fries, 166)(eggs, 544)
+{french fries, 765}
+(french fries, 422)
+(french fries, 33)(eggs, 248)(mineral water, 1042)
+(french fries, 166)(eggs, 544)
+(french fries, 144)(mineral water, 1042)
+{eggs, 792}
+(eggs, 544)
+(eggs, 248)(mineral water, 1042)
+{mineral water, 1042}
+(mineral water, 1042)
+=========================
+
+========PRINT_BPTREE========
+FrequentPattern	Frequency
+{almonds, eggs} 2
+{burgers, eggs} 2
+{chicken, eggs} 2
+{eggs, french fries} 2
+{eggs, mineral water} 2
+{eggs, turkey} 2
+{almonds, burgers, eggs} 2
+{almonds, eggs, soup} 2
+{burgers, eggs, soup} 2
+{chicken, eggs, mineral water} 2
+{eggs, french fries, soup} 2
+{almonds, burgers, eggs, soup} 2
+{chocolate, eggs} 3
+{chocolate, eggs, soup} 3
+{eggs, soup} 4
+==========================
+
+=========LOAD=========
+SUCCESS
+=======================
+
+=========BTLOAD=========
+SUCCESS
+=======================
+
+========PRINT_ITEMLIST========
+Item Frequency
+mineral water 1042
+eggs 792
+french fries 765
+spaghetti 757
+chocolate 723
+green tea 647
+milk 578
+frozen vegetables 464
+burgers 442
+pancakes 421
+ground beef 417
+cake 384
+low fat yogurt 336
+shrimp 321
+escalope 320
+tomatoes 317
+frozen smoothie 297
+whole wheat rice 283
+turkey 281
+chicken 277
+honey 233
+cookies 220
+soup 219
+grated cheese 211
+champagne 209
+fresh bread 207
+salmon 183
+brownies 153
+butter 151
+cottage cheese 150
+avocado 150
+hot dogs 146
+tomato juice 138
+ham 133
+vegetables mix 130
+red wine 130
+light mayo 127
+pepper 126
+energy bar 121
+energy drink 117
+cereals 113
+french wine 112
+yogurt cake 108
+strawberries 103
+fresh tuna 103
+whole wheat pasta 99
+meatballs 98
+almonds 97
+mushroom cream sauce 95
+muffins 95
+parmesan cheese 87
+rice 80
+fromage blanc 74
+pasta 73
+protein bar 72
+mint 72
+carrots 72
+eggplant 71
+white wine 69
+body spray 66
+black tea 64
+gums 60
+barbecue sauce 56
+melons 53
+cider 53
+nonfat milk 52
+magazines 52
+light cream 52
+yams 48
+tomato sauce 47
+whole weat flour 44
+shallot 44
+flax seed 44
+extra dark chocolate 44
+green beans 43
+green grapes 41
+salt 40
+bug spray 40
+antioxydant juice 40
+strong cheese 39
+clothes accessories 37
+zucchini 35
+sparkling water 34
+toothpaste 33
+blueberries 33
+bacon 33
+gluten free bar 32
+pet food 31
+soda 30
+spinach 28
+pickles 28
+candy bars 27
+burger sauce 27
+mayonnaise 26
+dessert wine 24
+shampoo 23
+mint green tea 23
+cauliflower 23
+salad 22
+chocolate bread 22
+asparagus 22
+hand protein bar 21
+chili 21
+tea 18
+oatmeal 18
+mashed potato 18
+corn 18
+babies food 18
+sandwich 17
+ketchup 17
+chutney 14
+bramble 6
+napkins 3
+water spray 2
+cream 2
+===============================
+
+========PRINT_FPTREE========
+{StandardItem,Frequency} (Path_Item,Frequency)
+{milk, 578}
+(milk, 8)(green tea, 52)(mineral water, 1042)
+(milk, 29)(french fries, 422)
+(milk, 32)(spaghetti, 311)
+(milk, 29)(spaghetti, 176)(mineral water, 1042)
+(milk, 2)(green tea, 13)(spaghetti, 69)(french fries, 422)
+(milk, 9)(chocolate, 39)(eggs, 248)(mineral water, 1042)
+(milk, 2)(chocolate, 4)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 19)(chocolate, 114)(mineral water, 1042)
+(milk, 20)(eggs, 248)(mineral water, 1042)
+(milk, 22)(chocolate, 205)
+(milk, 4)(green tea, 73)(french fries, 422)
+(milk, 11)(chocolate, 66)(spaghetti, 311)
+(milk, 2)(green tea, 24)(french fries, 166)(eggs, 544)
+(milk, 12)(french fries, 166)(eggs, 544)
+(milk, 2)(green tea, 8)(chocolate, 27)(french fries, 166)(eggs, 544)
+(milk, 101)
+(milk, 3)(chocolate, 45)(eggs, 544)
+(milk, 8)(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(milk, 2)(chocolate, 8)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(milk, 59)(mineral water, 1042)
+(milk, 2)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 5)(chocolate, 22)(spaghetti, 84)(eggs, 544)
+(milk, 31)(green tea, 199)
+(milk, 3)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 3)(green tea, 11)(chocolate, 45)(eggs, 544)
+(milk, 2)(chocolate, 5)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 6)(green tea, 18)(chocolate, 114)(mineral water, 1042)
+(milk, 6)(spaghetti, 84)(eggs, 544)
+(milk, 4)(green tea, 44)(eggs, 544)
+(milk, 9)(chocolate, 84)(french fries, 422)
+(milk, 34)(eggs, 544)
+(milk, 3)(green tea, 4)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 10)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(milk, 5)(spaghetti, 69)(french fries, 422)
+(milk, 7)(chocolate, 27)(french fries, 166)(eggs, 544)
+(milk, 1)(green tea, 11)(spaghetti, 84)(eggs, 544)
+(milk, 4)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 3)(green tea, 19)(eggs, 248)(mineral water, 1042)
+(milk, 2)(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 14)(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(milk, 11)(french fries, 144)(mineral water, 1042)
+(milk, 3)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(milk, 9)(green tea, 40)(spaghetti, 311)
+(milk, 2)(green tea, 2)(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(milk, 4)(green tea, 16)(french fries, 144)(mineral water, 1042)
+(milk, 1)(green tea, 5)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(milk, 1)(green tea, 2)(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(milk, 1)(green tea, 3)(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(milk, 3)(green tea, 18)(chocolate, 66)(spaghetti, 311)
+(milk, 1)(green tea, 4)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(milk, 3)(green tea, 12)(chocolate, 84)(french fries, 422)
+(milk, 2)(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(milk, 1)(green tea, 16)(spaghetti, 176)(mineral water, 1042)
+(milk, 2)(chocolate, 11)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(milk, 1)(green tea, 5)(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(milk, 1)(green tea, 3)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(milk, 1)(green tea, 36)(chocolate, 205)
+(milk, 1)(green tea, 4)(chocolate, 39)(eggs, 248)(mineral water, 1042)
+{green tea, 647}
+(green tea, 52)(mineral water, 1042)
+(green tea, 40)(spaghetti, 311)
+(green tea, 16)(spaghetti, 176)(mineral water, 1042)
+(green tea, 199)
+(green tea, 73)(french fries, 422)
+(green tea, 18)(chocolate, 66)(spaghetti, 311)
+(green tea, 13)(spaghetti, 69)(french fries, 422)
+(green tea, 24)(french fries, 166)(eggs, 544)
+(green tea, 11)(spaghetti, 84)(eggs, 544)
+(green tea, 18)(chocolate, 114)(mineral water, 1042)
+(green tea, 44)(eggs, 544)
+(green tea, 8)(chocolate, 27)(french fries, 166)(eggs, 544)
+(green tea, 19)(eggs, 248)(mineral water, 1042)
+(green tea, 11)(chocolate, 45)(eggs, 544)
+(green tea, 5)(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(green tea, 4)(chocolate, 39)(eggs, 248)(mineral water, 1042)
+(green tea, 16)(french fries, 144)(mineral water, 1042)
+(green tea, 4)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(green tea, 3)(chocolate, 22)(spaghetti, 84)(eggs, 544)
+(green tea, 12)(chocolate, 84)(french fries, 422)
+(green tea, 5)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(green tea, 36)(chocolate, 205)
+(green tea, 3)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(green tea, 2)(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(green tea, 3)(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(green tea, 4)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(green tea, 2)(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(green tea, 1)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(green tea, 1)(chocolate, 11)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+{chocolate, 723}
+(chocolate, 45)(eggs, 544)
+(chocolate, 5)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(chocolate, 39)(eggs, 248)(mineral water, 1042)
+(chocolate, 205)
+(chocolate, 66)(spaghetti, 311)
+(chocolate, 114)(mineral water, 1042)
+(chocolate, 22)(spaghetti, 84)(eggs, 544)
+(chocolate, 8)(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(chocolate, 4)(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(chocolate, 27)(french fries, 166)(eggs, 544)
+(chocolate, 14)(spaghetti, 69)(french fries, 422)
+(chocolate, 41)(spaghetti, 176)(mineral water, 1042)
+(chocolate, 84)(french fries, 422)
+(chocolate, 29)(french fries, 144)(mineral water, 1042)
+(chocolate, 8)(spaghetti, 25)(french fries, 166)(eggs, 544)
+(chocolate, 11)(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+{spaghetti, 757}
+(spaghetti, 311)
+(spaghetti, 44)(eggs, 248)(mineral water, 1042)
+(spaghetti, 176)(mineral water, 1042)
+(spaghetti, 69)(french fries, 422)
+(spaghetti, 84)(eggs, 544)
+(spaghetti, 35)(french fries, 144)(mineral water, 1042)
+(spaghetti, 13)(french fries, 33)(eggs, 248)(mineral water, 1042)
+(spaghetti, 25)(french fries, 166)(eggs, 544)
+{french fries, 765}
+(french fries, 422)
+(french fries, 33)(eggs, 248)(mineral water, 1042)
+(french fries, 166)(eggs, 544)
+(french fries, 144)(mineral water, 1042)
+{eggs, 792}
+(eggs, 544)
+(eggs, 248)(mineral water, 1042)
+{mineral water, 1042}
+(mineral water, 1042)
+=========================
+
+========PRINT_BPTREE========
+FrequentPattern	Frequency
+{almonds, eggs} 2
+{burgers, eggs} 2
+{chicken, eggs} 2
+{eggs, french fries} 2
+{eggs, mineral water} 2
+{eggs, turkey} 2
+{almonds, burgers, eggs} 2
+{almonds, eggs, soup} 2
+{burgers, eggs, soup} 2
+{chicken, eggs, mineral water} 2
+{eggs, french fries, soup} 2
+{almonds, burgers, eggs, soup} 2
+{chocolate, eggs} 3
+{chocolate, eggs, soup} 3
+{eggs, soup} 4
+==========================
+
+========PRINT_RANGE========
+FrequentPattern	Frequency
+{chocolate, eggs} 3
+{chocolate, eggs, soup} 3
+{eggs, soup} 4
+==========================
+

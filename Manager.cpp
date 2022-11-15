@@ -66,6 +66,14 @@ void Manager::run(const char* command)
 			}
 		}
 
+		else if (strcmp(temp, "PRINT_RANGE") == 0)
+		{
+			if (!PRINT_RANGE())
+			{
+				printErrorCode("PRINT_RANGE", 700);
+			}
+		}
+
 		delete[] cmd;
 	}
 	fin.close();
@@ -282,9 +290,26 @@ bool Manager::PRINT_BPTREE() {
 	
 // }
 
-// bool Manager::PRINT_RANGE(char* item, int start, int end) {
-	
-// }
+bool Manager::PRINT_RANGE() {
+	char *fitem = strtok(NULL, "\t");
+	char *fnum = strtok(NULL, "\t");
+	char *fnum2 = strtok(NULL, "\t");
+	if (fitem == NULL || fnum == NULL) // check if input is NULL
+		return false;
+	if (fnum[0] < 48 || fnum[0] > 57) // check if fnum is number
+		return false;
+	if (fnum2[0] < 48 || fnum2[0] > 57) // check if fnum2 is number
+		return false;
+
+	int MIN_FRE = stoi(fnum); // change into int
+	int MAX_FRE = stoi(fnum2);
+	string ITEM = fitem; // change into string
+
+	if (bptree->printRange(ITEM, MIN_FRE,MAX_FRE))
+		return true;
+	else
+		return false;
+}
 
 void Manager::printErrorCode(string str,int n) {				//ERROR CODE PRINT
 	flog << "=========" << str << "=========" << endl;
