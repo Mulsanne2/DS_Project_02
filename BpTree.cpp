@@ -114,7 +114,7 @@ void BpTree::splitIndexNode(BpTreeNode* pIndexNode) {
 	{ // divide into two Index Node, pIndexNode will be left index node
 		newIndexNode->insertIndexMap(pIndexNode->getIndexMap()->rbegin()->first, pIndexNode->getIndexMap()->rbegin()->second);
 		newIndexNode->getIndexMap()->begin()->second->setParent(newIndexNode);
-		pIndexNode->deleteMap(newIndexNode->getIndexMap()->rbegin()->first);
+		pIndexNode->deleteMap(newIndexNode->getIndexMap()->begin()->first);
 	}
 	
 	int UpNum = pIndexNode->getIndexMap()->rbegin()->first; //get center node's number which going up
@@ -181,10 +181,13 @@ bool BpTree::printFrequency(string item, int min_frequency)//print winratio in a
 					{
 						cout << "========PRINT_BPTREE========" << endl
 						<< "FrequentPattern	Frequency" << endl;
+						*fout << "========PRINT_BPTREE========" << endl
+							 << "FrequentPattern	Frequency" << endl;
 						bar = true;
 					}
 					printFrequentPatterns(iter2->second);
 					cout << iter->first << endl;
+					*fout << iter->first << endl;
 					}
 			}
 			}
@@ -194,6 +197,8 @@ bool BpTree::printFrequency(string item, int min_frequency)//print winratio in a
 		if (bar == false)
 		return false;
 		cout << "==========================" << endl
+			 << endl;
+		*fout << "==========================" << endl
 			 << endl;
 		return true;
 }
