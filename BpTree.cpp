@@ -176,6 +176,7 @@ bool BpTree::printConfidence(string item, double item_frequency, double min_conf
 				if (iter2->second.find(item) != iter2->second.end())
 				{
 					double CONFIDENCE = double(iter->first) / item_frequency;
+					CONFIDENCE = floor(CONFIDENCE * 1000) / 1000;
 					if (bar == false)
 					{
 						cout << "========PRINT_CONFIDENCE========" << endl
@@ -318,4 +319,44 @@ void BpTree::printFrequentPatterns(set<string> pFrequentPattern)
 		*fout << ", ";
 		cout << ", ";
 	}
+}
+
+BpTree::~BpTree(){
+	BpTreeNode *BottomNode = root;
+	if(root==NULL) //check if tree is empty
+		return;
+	
+	while(BottomNode->getMostLeftChild()!=NULL){ //get the leftest data node
+		BottomNode = BottomNode->getMostLeftChild();
+	}
+
+	// DeleteIndexNode(BottomNode);
+	while(BottomNode){
+		BpTreeNode *ParentNode = BottomNode->getParent();
+		//delete all the parents ancestor node(BpTreeIndexNode)
+		while(ParentNode){
+			map<int, BpTreeNode *> Childrens = *ParentNode->getIndexMap(); //get children's map of IndexNode
+
+			// delete all the parent's node at it's childrenNodes
+			for (auto iter = Childrens.begin(); iter != Childrens.end(); iter++)
+			{
+				BpTreeNode *Child = iter->second;
+				Child->setParent(NULL);
+			}
+
+			//delete Parent's children map
+			ParentNode->getIndexMap()->clear();
+
+			delete ParentNode; //delete parent Node
+			ParentNode = ParentNode->getParent(); //Move to Upper parent
+		}
+		// delete all the frequent Node
+		BottomNode = BottomNode->getNext();
+	}
+
+
+}
+
+void BpTree::DeleteIndexNode(BpTreeNode * BottomNode){
+
 }

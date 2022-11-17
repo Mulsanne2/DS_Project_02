@@ -5,7 +5,7 @@ FPGrowth::~FPGrowth() {
     table->~HeaderTable(); //delete all the tree nodes except root node
     delete fpTree; //delete root node
     delete table; //dele table
-    // flog.close();
+    flog.close();
 }
 
 void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency) {

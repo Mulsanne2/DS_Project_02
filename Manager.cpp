@@ -8,7 +8,6 @@ void Manager::run(const char* command)
 	{
 		flog << "File Open Error" << endl;
 		cout << "File Open Error" << endl;
-		//EXIT()
 		return;
 	}
 
@@ -82,10 +81,16 @@ void Manager::run(const char* command)
 			}
 		}
 
+		else if (strcmp(temp, "EXIT") == 0)
+		{			// check if instruction is EXIT
+			printSuccessCode("EXIT");
+			return;
+		}
+
 		delete[] cmd;
 	}
-	fin.close();
-	flog.close();
+	// fin.close();
+	// flog.close();
 	return;
 }
 
@@ -345,6 +350,13 @@ bool Manager::PRINT_RANGE() {
 		return true;
 	else
 		return false;
+}
+
+void Manager::EXIT(){
+	printSuccessCode("EXIT"); // execute EXIT
+
+	// fin.close();
+	// flog.close();
 }
 
 void Manager::printErrorCode(string str,int n) {				//ERROR CODE PRINT

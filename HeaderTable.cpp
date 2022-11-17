@@ -15,7 +15,7 @@ HeaderTable::~HeaderTable() {
 		}
 		iter1++;
 	}
-
+	dataTable.clear();
 	// 2) delete index Table
 	indexTable.clear();
 }
