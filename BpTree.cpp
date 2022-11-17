@@ -347,11 +347,23 @@ BpTree::~BpTree(){
 			//delete Parent's children map
 			ParentNode->getIndexMap()->clear();
 
-			delete ParentNode; //delete parent Node
-			ParentNode = ParentNode->getParent(); //Move to Upper parent
+			BpTreeNode *NextParent = ParentNode->getParent();
+			delete ParentNode;		  // delete parent Node
+			ParentNode = NextParent; //Move to Upper parent
 		}
 		// delete all the frequent Node
-		BottomNode = BottomNode->getNext();
+		map<int, FrequentPatternNode *> FrequentChild = *BottomNode->getDataMap();
+		for (auto iter = FrequentChild.begin(); iter != FrequentChild.end(); iter++)
+		{
+			FrequentPatternNode *DeleteFrequent = iter->second;
+			DeleteFrequent->getList().clear();
+			delete DeleteFrequent;
+		}
+		//delete it's bottom node
+		BottomNode->getDataMap()->clear();
+		BpTreeNode *NextBottom = BottomNode->getNext();
+		delete BottomNode;
+		BottomNode = NextBottom;
 	}
 
 
