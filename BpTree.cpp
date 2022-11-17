@@ -3,9 +3,7 @@
 bool BpTree::Insert(int key, set<string> set) {
 
 	BpTreeNode *FindingNode = searchDataNode(key); //find DataNode which has key value
-	/*
-	check if node hasn't found
-	*/
+
 	if(FindingNode==NULL){ //if node don't have key value then make new Frequent Pattern Node
 
 		FrequentPatternNode *NewFreNode = new FrequentPatternNode;
@@ -152,8 +150,56 @@ bool BpTree::excessIndexNode(BpTreeNode* pIndexNode) {
 }
 
 
-bool BpTree::printConfidence(string item, double item_frequency, double min_confidence)
-{	
+bool BpTree::printConfidence(string item, double item_frequency, double min_confidence) //print confidence
+{
+	bool bar = false;
+	if (root == NULL)
+		return false;
+
+	BpTreeNode *CurNode = root;
+
+	while (CurNode->getMostLeftChild()) //access to data node
+	{
+		CurNode = CurNode->getMostLeftChild();
+	}
+
+	while (CurNode)
+	{
+		map<int, FrequentPatternNode *> *Data = CurNode->getDataMap();
+		for (auto iter = Data->begin(); iter != Data->end(); iter++)
+		{									  // approach to every data node
+			if (iter->first >= min_confidence) // check if frequency is over min_frequency
+			{
+			multimap<int, set<string>> TEMP = iter->second->getList(); // get the multimap from Frequent node
+			for (auto iter2 = TEMP.begin(); iter2 != TEMP.end(); iter2++)
+			{
+				if (iter2->second.find(item) != iter2->second.end())
+				{
+					double CONFIDENCE = double(iter->first) / item_frequency;
+					if (bar == false)
+					{
+						cout << "========PRINT_CONFIDENCE========" << endl
+							 << "FrequentPattern	Frequency	Confidence" << endl;
+						*fout << "========PRINT_CONFIDENCE========" << endl
+							  << "FrequentPattern	Frequency	Confidence" << endl;
+						bar = true;
+					}
+					printFrequentPatterns(iter2->second);
+					cout << "\t" << iter->first << "\t" << CONFIDENCE << endl;
+					*fout << "\t" << iter->first << "\t" << CONFIDENCE << endl;
+				}
+			}
+			}
+		}
+		CurNode = CurNode->getNext();
+	}
+	if (bar == false)
+		return false;
+	cout << "==========================" << endl
+		 << endl;
+	*fout << "==========================" << endl
+		  << endl;
+	return true;
 
 	return true;
 }
@@ -273,18 +319,3 @@ void BpTree::printFrequentPatterns(set<string> pFrequentPattern)
 		cout << ", ";
 	}
 }
-
-// void BpTree::printFrequentPatterns(set<string> pFrequentPattern, string item) {
-// 	*fout << "{";
-// 	set<string> curPattern = pFrequentPattern;
-// 	curPattern.erase(item);
-// 	for (set<string>::iterator it = curPattern.begin(); it != curPattern.end();) {
-// 		string temp = *it++;
-// 		if (temp != item) *fout << temp;
-// 		if (it == curPattern.end()) {
-// 			*fout << "} ";
-// 			break;
-// 		}
-// 		*fout << ", ";
-// 	}
-// }

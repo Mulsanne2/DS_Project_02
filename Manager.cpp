@@ -66,6 +66,14 @@ void Manager::run(const char* command)
 			}
 		}
 
+		else if (strcmp(temp, "PRINT_CONFIDENCE") == 0)
+		{
+			if (!PRINT_CONFIDENCE())
+			{
+				printErrorCode("PRINT_CONFIDENCE", 600);
+			}
+		}
+
 		else if (strcmp(temp, "PRINT_RANGE") == 0)
 		{
 			if (!PRINT_RANGE())
@@ -193,6 +201,10 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 bool Manager::BTLOAD() //read result.txt and make B+Tree
 {
 	//check BTLOAD has Already Done
+	if (fpgrowth->getHeaderTable()->getindexTable().empty() || fpgrowth->getHeaderTable()->getdataTable().empty())
+	{
+		return false;
+	}
 	/*
 	DO IT!
 	*/
@@ -286,15 +298,39 @@ bool Manager::PRINT_BPTREE() {
 		return false;
 }
 
-// bool Manager::PRINT_CONFIDENCE(char* item, double rate) {
-	
-// }
+bool Manager::PRINT_CONFIDENCE() {
+	char *fitem = strtok(NULL, "\t");
+	char *fnum = strtok(NULL, "\t");
+	if (fitem == NULL || fnum == NULL) // check if input is NULL
+		return false;
+	if (fnum[0] < 48 || fnum[0] > 57) // check if fnum is number
+		return false;
+	string item = fitem; //store item name
+	double confi = stof(fnum);
+
+	int ItemFrequency = 0;
+	list<pair<int, string>> table = fpgrowth->getHeaderTable()->getindexTable(); //get frequency from index table
+	for (auto iter = table.begin(); iter != table.end();iter++){
+		if(iter->second==item)
+			ItemFrequency = iter->first;
+	}
+	if(ItemFrequency==0)//check if ItemFrequency is 0
+		return false;
+
+	double min_frequency = double(ItemFrequency) * confi; //caclulate min frequency
+	min_frequency = floor(min_frequency * 100000) / 100000;
+
+	if(bptree->printConfidence(item, double(ItemFrequency), min_frequency))
+		return true;
+	else
+		return false;
+}
 
 bool Manager::PRINT_RANGE() {
 	char *fitem = strtok(NULL, "\t");
 	char *fnum = strtok(NULL, "\t");
 	char *fnum2 = strtok(NULL, "\t");
-	if (fitem == NULL || fnum == NULL) // check if input is NULL
+	if (fitem == NULL || fnum == NULL || fnum2 == NULL) // check if input is NULL
 		return false;
 	if (fnum[0] < 48 || fnum[0] > 57) // check if fnum is number
 		return false;
