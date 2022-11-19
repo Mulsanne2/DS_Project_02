@@ -30,18 +30,18 @@ bool BpTree::Insert(int key, set<string> set) {
 				break;
 			CurNode = CurNode->getNext();
 		}
-		CurNode->insertDataMap(key, NewFreNode);
-		if(excessDataNode(CurNode))
+		CurNode->insertDataMap(key, NewFreNode); //insert data
+		if(excessDataNode(CurNode)) //check split of datanode
 			splitDataNode(CurNode);
 
-		CurNode = CurNode->getParent();
-		while(CurNode){
+		CurNode = CurNode->getParent(); //move to parent
+		while(CurNode){ //check if indexnode have to split
 			if(excessIndexNode(CurNode))
 				splitIndexNode(CurNode);
 			CurNode = CurNode->getParent();
 		}
 		}
-		if (root->getParent())
+		if (root->getParent()) //check if root has been split
 		root = root->getParent();
 	}
 	else{
@@ -61,7 +61,7 @@ BpTreeNode* BpTree::searchDataNode(int n) {
 		pCur = pCur->getMostLeftChild();
 	}
 	
-	while(pCur){ //get the 
+	while(pCur){ //find the key value is in the data node
 		map<int, FrequentPatternNode *> *CurMap = pCur->getDataMap(); 
 		if(CurMap->find(n)!=CurMap->end())
 			return pCur;
@@ -73,7 +73,7 @@ BpTreeNode* BpTree::searchDataNode(int n) {
 void BpTree::splitDataNode(BpTreeNode* pDataNode) {
 	BpTreeDataNode *newDataNode = new BpTreeDataNode;
 	int INDEX = ceil(double(order) / 2);
-	// int INDEX = order/2;
+
 	for (int i = 0; i < INDEX;i++){ //divide into two Data node, pDataNode will be left side node
 		newDataNode->insertDataMap(pDataNode->getDataMap()->rbegin()->first, pDataNode->getDataMap()->rbegin()->second);
 		pDataNode->deleteMap(newDataNode->getDataMap()->begin()->first);
@@ -94,11 +94,11 @@ void BpTree::splitDataNode(BpTreeNode* pDataNode) {
 		pDataNode->getParent()->insertIndexMap(newDataNode->getDataMap()->begin()->first, newDataNode);
 		newDataNode->setParent(ParentNode);
 	}
-	else{
+	else{ //set new parent
 		BpTreeNode *ParentNode = new BpTreeIndexNode;
 		ParentNode->insertIndexMap(newDataNode->getDataMap()->begin()->first, newDataNode);
 		ParentNode->setMostLeftChild(pDataNode);
-		pDataNode->setParent(ParentNode);
+		pDataNode->setParent(ParentNode); //set the new parent
 		newDataNode->setParent(ParentNode);
 	}
 	
@@ -121,7 +121,7 @@ void BpTree::splitIndexNode(BpTreeNode* pIndexNode) {
 
 	if(!pIndexNode->getParent()){ //when pIndexNode doesn't have parent node
 		BpTreeIndexNode *newUpIndexNode = new BpTreeIndexNode;
-		newUpIndexNode->setMostLeftChild(pIndexNode);
+		newUpIndexNode->setMostLeftChild(pIndexNode); //set children
 		newUpIndexNode->insertIndexMap(UpNum, newIndexNode);
 		newIndexNode->setMostLeftChild(UpNode);
 		//set the new parents
@@ -176,7 +176,7 @@ bool BpTree::printConfidence(string item, double item_frequency, double min_conf
 				if (iter2->second.find(item) != iter2->second.end())
 				{
 					double CONFIDENCE = double(iter->first) / item_frequency;
-					CONFIDENCE = floor(CONFIDENCE * 1000) / 1000;
+					CONFIDENCE = floor(CONFIDENCE * 100) / 100;
 					if (bar == false)
 					{
 						cout << "========PRINT_CONFIDENCE========" << endl

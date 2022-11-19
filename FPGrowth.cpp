@@ -15,10 +15,6 @@ void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_
     for (iter = item_array.begin(); iter != item_array.end(); iter++)
     {
 
-        if (CurrentNode == NULL){ //check if Current node is NULL
-            cout << "ERROR1" << endl;
-            continue;
-        }
        if (CurrentNode->getChildrenNode(*iter))
         {                                                       // check if there is item node alreay exists
             CurrentNode = CurrentNode->getChildrenNode(*iter); // move to children node
@@ -27,9 +23,6 @@ void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_
         else
         { // if there child node don't exist
             FPNode *newChild = new FPNode;    // make new node
-            if(newChild==NULL){
-                cout << "NEW ERROR";
-            }
             newChild->setParent(CurrentNode); // set parent node as current
         
             connectNode(table, *iter, newChild);
@@ -44,12 +37,12 @@ void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_
     }
 
 void FPGrowth::connectNode(HeaderTable* table, string item, FPNode* node) {
-    if(!table->getNode(item)){
+    if(!table->getNode(item)){ //if item don't have any connected node in data table
         table->insertNode(item, node);
     }
-    else{
+    else{ //if item has already connected node in data table
         FPNode *LastNode = table->getNode(item);
-        while(LastNode->getNext()){
+        while(LastNode->getNext()){ //move to last node
             LastNode = LastNode->getNext();
         }
         LastNode->setNext(node);
@@ -85,13 +78,13 @@ bool FPGrowth::printList() { //print the index table
 
     list<pair<int, string>> ptr = table->getindexTable(); //get index table
 
-    list<pair<int, string>>::iterator it = ptr.begin();
+    list<pair<int, string>>::iterator it = ptr.begin(); //declare iterator
 
     *fout << "========PRINT_ITEMLIST========" << endl;
     *fout << "Item Frequency" << endl;
     cout << "========PRINT_ITEMLIST========" << endl;
     cout << "Item Frequency" << endl;
-    while(it != ptr.end()){
+    while(it != ptr.end()){ //print first data in index node to last data
         *fout << it->second << " " << it->first << endl;
         cout << it->second << " " << it->first << endl;
         it++;
@@ -102,6 +95,7 @@ bool FPGrowth::printList() { //print the index table
          << endl;
     return true;
     }
+
 bool FPGrowth::printTree() {
     list<pair<int, string>> ascendingTable = table->getindexTable();
     list<pair<int, string>>::iterator iter;
@@ -119,7 +113,7 @@ bool FPGrowth::printTree() {
         *fout << "{" << iter->second << ", " << iter->first << "}" << endl;
         FPNode *LeafTraveler = table->getNode(iter->second);
         FPNode *CURRENT, *Parent; //CURRENT is value that currrent Node
-        while (LeafTraveler)
+        while (LeafTraveler) //move to next node
         {
             CURRENT = LeafTraveler;
             map<string, FPNode *> TEMPMAP;
@@ -130,7 +124,7 @@ bool FPGrowth::printTree() {
                 //print the it's node name and frequency
                 *fout << "(" << CURRENT->FINDNAME(CURRENT->getParent()) << ", " << CURRENT->getFrequency() << ")";
 
-                CURRENT = CURRENT->getParent(); //move to the root
+                CURRENT = CURRENT->getParent(); //move to the parent
             }
             cout << endl;
             *fout << endl;
