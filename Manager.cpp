@@ -7,7 +7,6 @@ void Manager::run(const char* command)
 	if(!fin) //check if file open appropriately
 	{
 		flog << "File Open Error" << endl;
-		cout << "File Open Error" << endl;
 		return;
 	}
 
@@ -88,6 +87,8 @@ void Manager::run(const char* command)
 		}
 		
 		else{
+			flog << "Wrong Instruction" << endl
+				 << endl;
 			continue;
 		}
 
@@ -110,7 +111,6 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 	if (!readItem) //check if market.txt is opened
 	{
 		flog << "File Open Error" << endl;
-		cout << "File Open Error" << endl;
 		return false;
 	}
 	string ItemLine;
@@ -205,13 +205,6 @@ bool Manager::LOAD() //load market.txt and construct FP-Growth which has IndexTa
 		if(SortedItem.empty()) //when there is no item satisfy threshold
 			continue;
 
-		// for (string i : SortedItem){
-		// 	cout << i << " ";
-		// 	flog << i << " ";
-		// }
-		// cout << endl;
-		// flog << endl;
-
 		fpgrowth->createFPtree(fpgrowth->getTree(), fpgrowth->getHeaderTable(), SortedItem, 1); //push on FPTree
 	}
 	rereadItem.close(); //close ifstream
@@ -230,7 +223,6 @@ bool Manager::BTLOAD() //read result.txt and make B+Tree
 	if (!ReadResult) // check if result.txt is opened
 	{
 		flog << "File Open Error" << endl;
-		cout << "File Open Error" << endl;
 		return false;
 	}
 	string ResultLine;
@@ -246,7 +238,6 @@ bool Manager::BTLOAD() //read result.txt and make B+Tree
 		char *temp = strtok(tempResult, "\t"); //read frequecny number
 
 		if(temp[0]<48 || temp[0]>57){ //check first number is number
-			cout << "Wrong market.txt format" << endl;
 			flog << "Wrong market.txt format" << endl;
 			return false;
 		}
@@ -371,11 +362,6 @@ void Manager::printErrorCode(string str,int n) {				//ERROR CODE PRINT
 	flog << "=========" << str << "=========" << endl;
 	flog << " ERROR " << n << endl;
 	flog << "=======================" << endl << endl;
-
-	cout << "=========" << str << "=========" << endl;
-	cout << " ERROR " << n << endl;
-	cout << "=======================" << endl
-		 << endl;
 }
 
 void Manager::printSuccessCode(string str){ // SUCCESS CODE PRINT
@@ -383,9 +369,4 @@ void Manager::printSuccessCode(string str){ // SUCCESS CODE PRINT
 	flog << "=========" << str << "=========" << endl;
 	flog << "SUCCESS" << endl;
 	flog << "=======================" << endl << endl;
-
-	cout << "=========" << str << "=========" << endl;
-	cout << "SUCCESS" << endl;
-	cout << "=======================" << endl
-		 << endl;
 }

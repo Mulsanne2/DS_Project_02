@@ -176,17 +176,14 @@ bool BpTree::printConfidence(string item, double item_frequency, double min_conf
 				if (iter2->second.find(item) != iter2->second.end())
 				{
 					double CONFIDENCE = double(iter->first) / item_frequency;
-					CONFIDENCE = floor(CONFIDENCE * 100) / 100;
+					CONFIDENCE = round(CONFIDENCE * 100) / 100;
 					if (bar == false)
 					{
-						cout << "========PRINT_CONFIDENCE========" << endl
-							 << "FrequentPattern	Frequency	Confidence" << endl;
 						*fout << "========PRINT_CONFIDENCE========" << endl
 							  << "FrequentPattern	Frequency	Confidence" << endl;
 						bar = true;
 					}
 					printFrequentPatterns(iter2->second);
-					cout << "\t" << iter->first << "\t" << CONFIDENCE << endl;
 					*fout << "\t" << iter->first << "\t" << CONFIDENCE << endl;
 				}
 			}
@@ -196,8 +193,6 @@ bool BpTree::printConfidence(string item, double item_frequency, double min_conf
 	}
 	if (bar == false)
 		return false;
-	cout << "==========================" << endl
-		 << endl;
 	*fout << "==========================" << endl
 		  << endl;
 	return true;
@@ -226,14 +221,11 @@ bool BpTree::printFrequency(string item, int min_frequency)//print winratio in a
 				if(iter2->second.find(item)!=iter2->second.end()){
 					if (bar == false)
 					{
-						cout << "========PRINT_BPTREE========" << endl
-						<< "FrequentPattern	Frequency" << endl;
 						*fout << "========PRINT_BPTREE========" << endl
 							 << "FrequentPattern	Frequency" << endl;
 						bar = true;
 					}
 					printFrequentPatterns(iter2->second);
-					cout << iter->first << endl;
 					*fout << iter->first << endl;
 					}
 			}
@@ -243,8 +235,6 @@ bool BpTree::printFrequency(string item, int min_frequency)//print winratio in a
 		}
 		if (bar == false)
 		return false;
-		cout << "==========================" << endl
-			 << endl;
 		*fout << "==========================" << endl
 			 << endl;
 		return true;
@@ -275,14 +265,11 @@ bool BpTree::printRange(string item, int min, int max) {
 					{
 					if (bar == false)
 					{
-						cout << "========PRINT_RANGE========" << endl
-							 << "FrequentPattern	Frequency" << endl;
 						*fout << "========PRINT_RANGE========" << endl
 							  << "FrequentPattern	Frequency" << endl;
 						bar = true;
 					}
 					printFrequentPatterns(iter2->second);
-					cout << iter->first << endl;
 					*fout << iter->first << endl;
 					}
 			}
@@ -292,32 +279,26 @@ bool BpTree::printRange(string item, int min, int max) {
 		}
 		if (bar == false)
 		return false;
-		cout << "==========================" << endl
-			 << endl;
 		*fout << "==========================" << endl
 			  << endl;
 
 		return true;
 }
 
-void BpTree::printFrequentPatterns(set<string> pFrequentPattern)
+void BpTree::printFrequentPatterns(set<string> pFrequentPattern) //print Frequnecy pattern in frequency pattern node
 {
 	*fout << "{";
-	cout << "{";
 	set<string> curPattern = pFrequentPattern;
 	for (set<string>::iterator it = curPattern.begin(); it != curPattern.end();)
 	{
 		string temp = *it++;
 		*fout << temp;
-		cout << temp;
 		if (it == curPattern.end())
 		{
 			*fout << "} ";
-			cout << "} ";
 			break;
 		}
 		*fout << ", ";
-		cout << ", ";
 	}
 }
 

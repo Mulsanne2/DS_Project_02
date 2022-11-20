@@ -1,6 +1,6 @@
 #include "FPGrowth.h"
 
-FPGrowth::~FPGrowth() {
+FPGrowth::~FPGrowth() { //destructor of FPGrowth
 
     table->~HeaderTable(); //delete all the tree nodes except root node
     delete fpTree; //delete root node
@@ -8,7 +8,7 @@ FPGrowth::~FPGrowth() {
     flog.close();
 }
 
-void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency) {
+void FPGrowth::createFPtree(FPNode* root, HeaderTable* table, list<string> item_array, int frequency) { //create FPtree
     FPNode *CurrentNode = root;
     list<string>::iterator iter;
 
@@ -82,17 +82,12 @@ bool FPGrowth::printList() { //print the index table
 
     *fout << "========PRINT_ITEMLIST========" << endl;
     *fout << "Item Frequency" << endl;
-    cout << "========PRINT_ITEMLIST========" << endl;
-    cout << "Item Frequency" << endl;
     while(it != ptr.end()){ //print first data in index node to last data
         *fout << it->second << " " << it->first << endl;
-        cout << it->second << " " << it->first << endl;
         it++;
     }
     *fout << "===============================" << endl
           << endl;
-    cout << "===============================" << endl
-         << endl;
     return true;
     }
 
@@ -100,16 +95,13 @@ bool FPGrowth::printTree() {
     list<pair<int, string>> ascendingTable = table->getindexTable();
     list<pair<int, string>>::iterator iter;
 
-    cout << "========PRINT_FPTREE========" << endl;
     *fout << "========PRINT_FPTREE========" << endl;
-    cout << "{StandardItem,Frequency} (Path_Item,Frequency)" << endl;
     *fout << "{StandardItem,Frequency} (Path_Item,Frequency)" << endl;
     for (iter = ascendingTable.begin(); iter != ascendingTable.end(); iter++)
     {
         if (iter->first < threshold) // do not print data which is lower than threshold
             continue;
 
-        cout << "{" << iter->second << ", " << iter->first << "}" << endl;
         *fout << "{" << iter->second << ", " << iter->first << "}" << endl;
         FPNode *LeafTraveler = table->getNode(iter->second);
         FPNode *CURRENT, *Parent; //CURRENT is value that currrent Node
@@ -120,20 +112,16 @@ bool FPGrowth::printTree() {
             map<string, FPNode *>::iterator iter;
 
             while(CURRENT->getParent()){ //find the name of it's node
-                cout << "(" << CURRENT->FINDNAME(CURRENT->getParent()) << ", " << CURRENT->getFrequency() << ")";
                 //print the it's node name and frequency
                 *fout << "(" << CURRENT->FINDNAME(CURRENT->getParent()) << ", " << CURRENT->getFrequency() << ")";
 
                 CURRENT = CURRENT->getParent(); //move to the parent
             }
-            cout << endl;
             *fout << endl;
             //move to next connected node
             LeafTraveler = LeafTraveler->getNext();
         }
     }
-    cout << "=========================" << endl
-         << endl;
     *fout << "=========================" << endl
           << endl;
 

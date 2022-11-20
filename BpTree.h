@@ -19,7 +19,7 @@ public:
 	}
 	~BpTree();
 
-	bool		Insert(int key, set<string> set);
+	bool		Insert(int key, set<string> set); 
 	bool		excessDataNode(BpTreeNode* pDataNode);
 	bool		excessIndexNode(BpTreeNode* pIndexNode);
 	void		splitDataNode(BpTreeNode* pDataNode);

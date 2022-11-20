@@ -24,7 +24,7 @@ void HeaderTable::insertTable(char* item, int frequency) {
 	indexTable.push_back(make_pair(frequency, item));
 }
 
-void HeaderTable::makeDataTable(){
+void HeaderTable::makeDataTable(){ //make data table from index table
 	list<pair<int, string>>::iterator iter;
 	for (iter = indexTable.begin(); iter != indexTable.end();iter++){
 		string ITEM = iter->second;
@@ -32,7 +32,7 @@ void HeaderTable::makeDataTable(){
 	}
 }
 
-int HeaderTable::find_frequency(string item){
+int HeaderTable::find_frequency(string item){ //get frequency of item in index node
 	int frequency = 0;
 	list<pair<int, string>>::iterator iter = indexTable.begin();
 	while (iter != indexTable.end())
@@ -47,7 +47,7 @@ int HeaderTable::find_frequency(string item){
 	return frequency;
 }
 
-bool HeaderTable::Find_Item(string item){
+bool HeaderTable::Find_Item(string item){ //check if index node has same item 
 	list<pair<int, string>>::iterator iter = indexTable.begin();
 	while (iter != indexTable.end()){
 		if(iter->second == item){
@@ -58,11 +58,11 @@ bool HeaderTable::Find_Item(string item){
 	return false;
 }
 
-void HeaderTable::Increase_Frequency(string item){
+void HeaderTable::Increase_Frequency(string item){ //function that increase 1 in index table
 	list<pair<int, string>>::iterator iter = indexTable.begin();
 	while (iter != indexTable.end())
 	{
-		if (iter->second == item)
+		if (iter->second == item) //find data which name is same with item
 		{
 			int Frequency = find_frequency(item);
 			Frequency++;
@@ -72,6 +72,6 @@ void HeaderTable::Increase_Frequency(string item){
 	}
 }
 
-void HeaderTable::insertNode(string item, FPNode *newNode){
+void HeaderTable::insertNode(string item, FPNode *newNode){ //insert node
 	dataTable.find(item)->second = newNode;
 }
